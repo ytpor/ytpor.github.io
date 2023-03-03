@@ -1,0 +1,34 @@
+baseURL = "https://ytpor.github.io"
+languageCode = "en-us"
+title = "YT Por"
+theme = "PaperMod"
+
+[params]
+ShowCodeCopyButtons = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[menu]
+
+[[menu.main]]
+name = 'About'
+url = '/about/'
+weight = 30
+
+[[menu.main]]
+name = 'Archives'
+url = '/archives/'
+weight = 40
+
+[[menu.main]]
+name = 'Search'
+url = '/search/'
+weight = 45
+
+[[menu.main]]
+name = 'Tags'
+url = '/tags/'
+weight = 50
