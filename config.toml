@@ -2,6 +2,7 @@ baseURL = "https://www.ytpor.com"
 languageCode = "en-us"
 title = "YT Por"
 theme = "PaperMod"
+googleAnalytics = 'G-3V2PB7JNZW'
 
 [params]
 ShowCodeCopyButtons = true
