@@ -35,6 +35,11 @@
   </div>
   {{- end }}
 
+
+  {{ if .Params.socialicons }}
+    {{ partial "social_icons.html" site.Params.socialIcons }}
+  {{ end }}
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">

@@ -9,6 +9,16 @@ ShowCodeCopyButtons = true
 ShowShareButtons = true
 ShowPostNavLinks = true
 
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/ytpor/"
+weight = 1
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/yt-por-081243aa/"
+weight = 3
+
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
