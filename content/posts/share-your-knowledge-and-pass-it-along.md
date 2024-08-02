@@ -1,6 +1,6 @@
 ---
 title: 'Share Your Knowledge and Pass It Along'
-date: 2016-01-08T18:57:00.000+08:00
+date: 2016-01-08T18:57:00+08:00
 draft: false
 url: /2016/01/share-your-knowledge-and-pass-it-along.html
 tags:

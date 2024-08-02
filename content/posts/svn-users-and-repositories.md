@@ -1,6 +1,6 @@
 ---
 title: 'SVN Users and Repositories'
-date: 2016-03-07T12:00:00.000+08:00
+date: 2016-03-07T12:00:00+08:00
 draft: false
 url: /2016/03/svn-users-and-repositories.html
 tags:

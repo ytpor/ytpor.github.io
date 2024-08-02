@@ -1,6 +1,6 @@
 ---
 title: 'Setup User and RBAC Management in Yii2'
-date: 2019-08-26T23:05:00.000+08:00
+date: 2019-08-26T23:05:00+08:00
 draft: false
 url: /2019/08/setup-user-and-rbac-management-in-yii2.html
 tags:

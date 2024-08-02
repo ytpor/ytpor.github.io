@@ -1,6 +1,6 @@
 ---
 title: 'Multiple GitHub Accounts and Repositories'
-date: 2023-05-12T14:00:00.000+08:00
+date: 2023-05-12T14:00:00+08:00
 draft: false
 url: /2023/05/multiple-github-accounts-and-repositories.html
 tags:

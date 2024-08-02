@@ -1,6 +1,6 @@
 ---
 title: 'Running FTP on CentOS'
-date: 2016-03-11T20:00:00.000+08:00
+date: 2016-03-11T20:00:00+08:00
 draft: false
 url: /2016/03/running-ftp-on-centos.html
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 'Nginx Configuration for Multiple Yii2 Site Under Same Domain'
-date: 2017-12-27T16:03:00.000+08:00
+date: 2017-12-27T16:03:00+08:00
 draft: false
 url: /2017/12/nginx-configuration-for-multiple-yii2.html
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 'Add and Allow New Telegram Bot to Send Message in Group'
-date: 2018-02-05T12:14:00.000+08:00
+date: 2018-02-05T12:14:00+08:00
 draft: false
 url: /2018/02/add-and-allow-new-telegram-bot-to-send.html
 tags:

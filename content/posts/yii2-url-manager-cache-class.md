@@ -1,6 +1,6 @@
 ---
 title: 'Yii2 URL manager cache class'
-date: 2020-04-09T13:00:00.000+08:00
+date: 2020-04-09T13:00:00+08:00
 draft: false
 url: /2020/04/yii2-url-manager-cache-class.html
 tags:

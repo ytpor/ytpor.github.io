@@ -1,6 +1,6 @@
 ---
 title: 'csync2 Installation and Setup'
-date: 2016-03-14T12:00:00.000+08:00
+date: 2016-03-14T12:00:00+08:00
 draft: false
 url: /2016/03/csync2-installation-and-setup.html
 tags:

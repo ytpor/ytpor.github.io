@@ -1,6 +1,6 @@
 ---
 title: 'Send Telegram Message in Group using VB Script'
-date: 2018-08-17T12:45:00.000+08:00
+date: 2018-08-17T12:45:00+08:00
 draft: false
 url: /2018/08/send-telegram-message-in-group-using-vb.html
 tags:

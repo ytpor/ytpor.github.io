@@ -1,6 +1,6 @@
 ---
 title: 'Yii2 Internationalization (i18n) for advanced template'
-date: 2023-05-12T13:00:00.000+08:00
+date: 2023-05-12T13:00:00+08:00
 draft: false
 url: /2023/05/yii2-internationalization-i18n-for-advanced-template.html
 tags:

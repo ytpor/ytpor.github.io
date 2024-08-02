@@ -1,6 +1,6 @@
 ---
 title: 'S3cmd on CentOS 7'
-date: 2020-03-20T12:00:00.000+08:00
+date: 2020-03-20T12:00:00+08:00
 draft: false
 url: /2020/03/s3cmd-on-centos-7.html
 tags:

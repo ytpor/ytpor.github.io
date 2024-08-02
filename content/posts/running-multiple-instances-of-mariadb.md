@@ -1,6 +1,6 @@
 ---
 title: 'Running multiple instances of MariaDB'
-date: 2024-07-04T13:00:00.000+08:00
+date: 2024-07-04T13:00:00+08:00
 draft: false
 url: /2024/07/running-multiple-instances-of-mariadb.html
 tags:

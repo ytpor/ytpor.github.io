@@ -1,6 +1,6 @@
 ---
 title: 'RabbitMQ can not login with guest/guest'
-date: 2016-12-20T13:54:00.000+08:00
+date: 2016-12-20T13:54:00+08:00
 draft: false
 url: /2016/12/rabbitmq-can-not-login-with-guestguest.html
 tags:

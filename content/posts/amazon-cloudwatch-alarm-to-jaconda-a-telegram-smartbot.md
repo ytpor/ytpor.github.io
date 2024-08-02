@@ -1,6 +1,6 @@
 ---
 title: 'Amazon Cloudwatch alarm to Jaconda - a Telegram Smartbot'
-date: 2017-02-15T01:00:00.000+08:00
+date: 2017-02-15T01:00:00+08:00
 draft: false
 url: /2017/02/we-have-setup-amazon-cloudwatch-alarms.html
 tags:
