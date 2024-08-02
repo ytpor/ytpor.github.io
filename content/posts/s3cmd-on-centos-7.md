@@ -7,6 +7,10 @@ tags:
 - centos
 - s3cmd
 - amazon s3
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Centos-logo-light.svg"
+  alt: "CentOS"
+  relative: false
 ---
 
 S3cmd is a command line tool that we've used for uploading, retrieving and managing data in Amazon S3.

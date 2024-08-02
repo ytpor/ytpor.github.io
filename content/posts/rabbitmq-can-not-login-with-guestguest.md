@@ -6,6 +6,10 @@ url: /2016/12/rabbitmq-can-not-login-with-guestguest.html
 tags:
 - ubuntu
 - rabbitmq
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/commons/7/71/RabbitMQ_logo.svg"
+  alt: "RabbitMQ"
+  relative: false
 ---
 
 After a fresh install of RabbitMQ, I have encountered a Login Failed error when trying to access the RabbitMQ Management console at http://localhost:15672

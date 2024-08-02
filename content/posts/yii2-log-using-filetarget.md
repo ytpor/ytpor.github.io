@@ -5,7 +5,10 @@ draft: false
 url: /2020/04/yii2-log-using-filetarget.html
 tags:
 - log
-- yii2
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/en/6/6b/Yii-logo-transparent.png"
+  alt: "Yii"
+  relative: false
 ---
 
 Here's a sample Yii2 FileTarget configuration (to be added to the application's configuration) used for logging. This configuration overwrite the default log file location, doesn't capture the global PHP variables and also, adds a prefix to the log entry.

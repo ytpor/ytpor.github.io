@@ -8,6 +8,10 @@ tags:
 - i18n
 - translation
 - yii2
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/en/6/6b/Yii-logo-transparent.png"
+  alt: "Yii"
+  relative: false
 ---
 
 We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).

@@ -9,6 +9,10 @@ tags:
 - telegram bot
 - vbs
 - bot
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg"
+  alt: "Telegram"
+  relative: false
 ---
 
 Here's a vb script snippet that I have used to send Telegram message in a group from an Excel sheet.

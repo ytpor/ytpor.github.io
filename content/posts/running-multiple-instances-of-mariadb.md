@@ -6,6 +6,10 @@ url: /2024/07/running-multiple-instances-of-mariadb.html
 tags:
 - mariadb
 - windows
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/commons/c/ca/MariaDB_colour_logo.svg"
+  alt: "MariaDB"
+  relative: false
 ---
 
 We have come across an occassion where we need to run multiple `MariaDB` databases on different port on the same Windows server. For our use case, each of the database represents a particular enviroment, eg. staging, sandbox or production. The same technique that I am going to illustrate will work for `MySQL`.

@@ -7,6 +7,10 @@ tags:
 - yii2
 - dotenv
 - codeception
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/en/6/6b/Yii-logo-transparent.png"
+  alt: "Yii"
+  relative: false
 ---
 
 My API uses the Yii2 advanced template. It uses symfony/dotenv to read the .env. The .env is loaded in all the configurations.

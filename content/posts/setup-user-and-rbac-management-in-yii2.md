@@ -7,6 +7,10 @@ tags:
 - user
 - rbac
 - yii2
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/en/6/6b/Yii-logo-transparent.png"
+  alt: "Yii"
+  relative: false
 ---
 
 My goal for this exercise is to have User and RBAC management in my Yii 2 application.

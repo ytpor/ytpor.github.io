@@ -6,6 +6,10 @@ url: /2020/04/yii2-url-manager-cache-class.html
 tags:
 - url manager
 - yii2
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/en/6/6b/Yii-logo-transparent.png"
+  alt: "Yii"
+  relative: false
 ---
 
 You might come across the below warning if you have not set a cache to your Yii2 application while using URL manager.

@@ -7,6 +7,10 @@ tags:
 - telegram
 - telegram bot
 - bot
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg"
+  alt: "Telegram"
+  relative: false
 ---
 
 1.  Talk to @BotFather, and request to create a new bot. (hint: /help)

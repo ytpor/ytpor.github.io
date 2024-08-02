@@ -5,6 +5,10 @@ draft: false
 url: /2016/03/svn-users-and-repositories.html
 tags:
 - svn
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Apache_Subversion_logo.svg"
+  alt: "SVN"
+  relative: false
 ---
 
 We have setup our SVN to be accessed through http with the help of Apache.

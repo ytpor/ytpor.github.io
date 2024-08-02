@@ -6,6 +6,10 @@ url: /2016/02/testing-yii-with-codeception.html
 tags:
 - yii
 - codeception
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/en/6/6b/Yii-logo-transparent.png"
+  alt: "Yii"
+  relative: false
 ---
 
 We have an application written in Yii. Up til this point, it has been manually tested. Since it's more efficient to automate the testing of this application, we have decided to set up Codeception to assist us with this task.

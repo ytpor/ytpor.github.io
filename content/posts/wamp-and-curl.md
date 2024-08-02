@@ -6,6 +6,10 @@ url: /2018/02/wamp-and-curl.html
 tags:
 - curl
 - wamp
+cover:
+  image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/WampServer.png"
+  alt: "WAMP"
+  relative: false
 ---
 
 Often times, after a fresh install of WAMP server, curl stops working. You might get a hint of the issue in logs/php\_error.log If not, it could be that the SSL/TLS Certificate Authority (CA) certificates has not bee setup properly.
