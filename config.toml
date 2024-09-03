@@ -9,6 +9,10 @@ ShowCodeCopyButtons = true
 ShowShareButtons = true
 ShowPostNavLinks = true
 
+[params.homeInfoParams]
+Title = "YT Por"
+Content = "I’m a code writer, observer, handyman, researcher, motivator, consultant and photographer."
+
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/ytpor/"
