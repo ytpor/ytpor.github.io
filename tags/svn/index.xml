@@ -1,3 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Svn on YT Por</title><link>https://www.ytpor.com/tags/svn/</link><description>Recent content in Svn on YT Por</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 07 Mar 2016 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/svn/index.xml" rel="self" type="application/rss+xml"/><item><title>SVN Users and Repositories</title><link>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</link><pubDate>Mon, 07 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</guid><description>We have setup our SVN to be accessed through http with the help of Apache. Here&amp;rsquo;s a sample configuration that we have used.
-vi /etc/httpd/conf.d/vhosts.conf Add the below into subversion.conf
-&amp;lt;VirtualHost *:443&amp;gt; ServerName svn.mydomain.com DocumentRoot /var/www/svn.mydomain.com &amp;lt;Directory /var/www/svn.mydomain.com&amp;gt; AllowOverride All Order Allow,Deny Allow from all Options -Indexes Require all granted &amp;lt;/Directory&amp;gt; &amp;lt;Location /repos/newrepository&amp;gt; DAV svn SVNPath /var/svn/repos/newrepository AuthName &amp;#34;Subversion repository&amp;#34; AuthType Digest AuthUserFile /var/svn/svn-auth.htdigest AuthzSVNAccessFile /var/svn/svn-acl.conf Require valid-user &amp;lt;/Location&amp;gt; SSLEngine on SSLProtocol all SSLCertificateFile /etc/pki/tls/certs/ca.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Svn on YT Por</title><link>https://www.ytpor.com/tags/svn/</link><description>Recent content in Svn on YT Por</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 07 Mar 2016 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/svn/index.xml" rel="self" type="application/rss+xml"/><item><title>SVN Users and Repositories</title><link>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</link><pubDate>Mon, 07 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</guid><description>&lt;p>We have setup our SVN to be accessed through http with the help of Apache.
+Here&amp;rsquo;s a sample configuration that we have used.&lt;/p>
+&lt;pre tabindex="0">&lt;code>vi /etc/httpd/conf.d/vhosts.conf
+&lt;/code>&lt;/pre>&lt;p>Add the below into subversion.conf&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;VirtualHost *:443&amp;gt;
+ServerName svn.mydomain.com
+DocumentRoot /var/www/svn.mydomain.com
+&amp;lt;Directory /var/www/svn.mydomain.com&amp;gt;
+AllowOverride All
+Order Allow,Deny
+Allow from all
+Options -Indexes
+Require all granted
+&amp;lt;/Directory&amp;gt;
+&amp;lt;Location /repos/newrepository&amp;gt;
+DAV svn
+SVNPath /var/svn/repos/newrepository
+AuthName &amp;#34;Subversion repository&amp;#34;
+AuthType Digest
+AuthUserFile /var/svn/svn-auth.htdigest
+AuthzSVNAccessFile /var/svn/svn-acl.conf
+Require valid-user
+&amp;lt;/Location&amp;gt;
+SSLEngine on
+SSLProtocol all
+SSLCertificateFile /etc/pki/tls/certs/ca.svn.mydomain.com.crt
+SSLCertificateKeyFile /etc/pki/tls/private/ca.svn.mydomain.com.key
+ErrorLog /var/log/httpd/svn.mydomain.com-error_log
+CustomLog /var/log/httpd/svn.mydomain.com-access_log combined
+&amp;lt;/VirtualHost&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>You can create a new SVN user by using the command below. This would store the encrypted password into svn-auth.htdigest&lt;/p></description></item></channel></rss>

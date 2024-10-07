@@ -1,17 +1,111 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Yii2 on YT Por</title><link>https://www.ytpor.com/tags/yii2/</link><description>Recent content in Yii2 on YT Por</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 12 May 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/yii2/index.xml" rel="self" type="application/rss+xml"/><item><title>Yii2 Internationalization (i18n) for advanced template</title><link>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</link><pubDate>Fri, 12 May 2023 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</guid><description>We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).
-In each of our application, we have a translation configuration. This is needed to generate the translation. The files would be generated in backend/messages, common/messages or frontend/messages.
-Here&amp;rsquo;s a sample.
-&amp;lt;?php // backend/config/i18n.php // common/config/i18n.php // frontend/config/i18n.php return [ &amp;#39;sourcePath&amp;#39; =&amp;gt; __DIR__ . DIRECTORY_SEPARATOR . &amp;#39;..&amp;#39;, &amp;#39;languages&amp;#39; =&amp;gt; [ &amp;#39;zh-CN&amp;#39;, ], &amp;#39;translator&amp;#39; =&amp;gt; &amp;#39;Yii::t&amp;#39;, &amp;#39;sort&amp;#39; =&amp;gt; true, &amp;#39;removeUnused&amp;#39; =&amp;gt; true, &amp;#39;markUnused&amp;#39; =&amp;gt; true, &amp;#39;only&amp;#39; =&amp;gt; [&amp;#39;*.</description></item><item><title>Yii 2 Codeception Fixtures Gotcha</title><link>https://www.ytpor.com/2021/07/yii-2-codeception-fixtures-gotcha.html</link><pubDate>Sat, 17 Jul 2021 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/07/yii-2-codeception-fixtures-gotcha.html</guid><description>We use MongoDB (important point) with our Yii 2 applicaton.
-While setting up our API test fixtures in our Cest file, $I-&amp;gt;grabFixture was not able to find the data we wanted eventhough we have defined it within the dataFile.
-[yii\base\ErrorException] Trying to get property &amp;#39;client_id&amp;#39; of non-object Here&amp;rsquo;s what the dataFile looks like.
-&amp;lt;?php // This doesn&amp;#39;t work. return [ &amp;#39;client_one&amp;#39; =&amp;gt; [ &amp;#39;client_id&amp;#39; =&amp;gt; &amp;#39;mytestclient&amp;#39;, ], ]; After some experimentation, we&amp;rsquo;ve found that we need to set the _id within the dataFile in order to get $I-&amp;gt;grabFixture to work properly.</description></item><item><title>Yii 2 Codeception API Test</title><link>https://www.ytpor.com/2021/06/yii-2-codeception-api-test.html</link><pubDate>Wed, 30 Jun 2021 21:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/06/yii-2-codeception-api-test.html</guid><description>My API uses the Yii2 advanced template. It uses symfony/dotenv to read the .env. The .env is loaded in all the configurations.
-$dotenv = new Symfony\Component\Dotenv\Dotenv; $dotenv-&amp;gt;load(__DIR__ . &amp;#39;/../../.env&amp;#39;); While running the Codeception api test, I came across this error.
-[PHPUnit\Framework\Exception] Undefined index: HOST at ../common/config/main-local.php:7 After much digging around, I&amp;rsquo;ve realized that I need to load Symfony\Component\Dotenv\Dotenv in common/config/codeception-local.php Thus, I have updated that file in the environment folder, and reran php init.</description></item><item><title>Yii 2 404 Not Found</title><link>https://www.ytpor.com/2021/06/yii-2-404-not-found.html</link><pubDate>Tue, 29 Jun 2021 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/06/yii-2-404-not-found.html</guid><description>After setting up a new application using Yii 2 Advanced Project Template, the very first time you want to load your new controller, if you are met with a 404 Not Found, one very likely cause is that you do not have a .htaccess in your web folder.</description></item><item><title>Yii2 URL manager cache class</title><link>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</link><pubDate>Thu, 09 Apr 2020 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</guid><description>You might come across the below warning if you have not set a cache to your Yii2 application while using URL manager.
-Unable to use cache for URL manager: Failed to instantiate component or class &amp;#34;cache&amp;#34;. In order to remove that warning, setup a cache in your application&amp;rsquo;s configuration.
-We are using the DummyCache class here as we have yet to decide on one that we want to use.
-&amp;#39;components&amp;#39; =&amp;gt; [ &amp;#39;cache&amp;#39; =&amp;gt; [ &amp;#39;class&amp;#39; =&amp;gt; &amp;#39;yii\caching\DummyCache&amp;#39;, // FIXME ], ],</description></item><item><title>Setup User and RBAC Management in Yii2</title><link>https://www.ytpor.com/2019/08/setup-user-and-rbac-management-in-yii2.html</link><pubDate>Mon, 26 Aug 2019 23:05:00 +0800</pubDate><guid>https://www.ytpor.com/2019/08/setup-user-and-rbac-management-in-yii2.html</guid><description>My goal for this exercise is to have User and RBAC management in my Yii 2 application.
-I&amp;rsquo;ve started out with the Yii 2 Basic Project Template and I would be adding the Yii2-user and Yii2-rbac extensions to my web application.
-Here are some of the steps I have taken to install and configure the extensions.
-Step 1: Installation Install the packages.
-composer require dektrium/yii2-user composer require dektrium/yii2-rbac Step 2: Configure the web application NOTE: Make sure that you don&amp;rsquo;t have user component configuration in your config files.</description></item><item><title>Nginx Configuration for Multiple Yii2 Site Under Same Domain</title><link>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</link><pubDate>Wed, 27 Dec 2017 16:03:00 +0800</pubDate><guid>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</guid><description>This nginx configuration will allow you to run multiple instances of Yii2 in sub folders under the same domain. Eg. http://advanced.local/ and http://advanced.local/subfolder/
-server { listen 80; # listen for IPv4 server_name advanced.local; set $root_path /var/www/main/web; root $root_path; index index.html index.php; charset utf-8; client_max_body_size 100M; location / { root $root_path; try_files $uri $uri/ /index.php$is_args$args; } location ~ \.php$ { try_files $uri /$uri =404; fastcgi_pass unix:/var/run/php/php7.0-fpm.sock; include fastcgi_params; fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; } location ^~ /subfolder { alias /var/www/subfolder/web; if (!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Yii2 on YT Por</title><link>https://www.ytpor.com/tags/yii2/</link><description>Recent content in Yii2 on YT Por</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 12 May 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/yii2/index.xml" rel="self" type="application/rss+xml"/><item><title>Yii2 Internationalization (i18n) for advanced template</title><link>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</link><pubDate>Fri, 12 May 2023 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</guid><description>&lt;p>We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).&lt;/p>
+&lt;p>In each of our application, we have a translation configuration. This is needed to generate the translation. The files would be generated in &lt;code>backend/messages&lt;/code>, &lt;code>common/messages&lt;/code> or &lt;code>frontend/messages&lt;/code>.&lt;/p>
+&lt;p>Here&amp;rsquo;s a sample.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;?php
+// backend/config/i18n.php
+// common/config/i18n.php
+// frontend/config/i18n.php
+return [
+&amp;#39;sourcePath&amp;#39; =&amp;gt; __DIR__ . DIRECTORY_SEPARATOR . &amp;#39;..&amp;#39;,
+&amp;#39;languages&amp;#39; =&amp;gt; [
+&amp;#39;zh-CN&amp;#39;,
+],
+&amp;#39;translator&amp;#39; =&amp;gt; &amp;#39;Yii::t&amp;#39;,
+&amp;#39;sort&amp;#39; =&amp;gt; true,
+&amp;#39;removeUnused&amp;#39; =&amp;gt; true,
+&amp;#39;markUnused&amp;#39; =&amp;gt; true,
+&amp;#39;only&amp;#39; =&amp;gt; [&amp;#39;*.php&amp;#39;],
+&amp;#39;except&amp;#39; =&amp;gt; [
+&amp;#39;.svn&amp;#39;,
+&amp;#39;.git&amp;#39;,
+&amp;#39;.gitignore&amp;#39;,
+&amp;#39;.gitkeep&amp;#39;,
+&amp;#39;.hgignore&amp;#39;,
+&amp;#39;.hgkeep&amp;#39;,
+&amp;#39;/assets&amp;#39;,
+&amp;#39;/command&amp;#39;,
+&amp;#39;/config&amp;#39;,
+&amp;#39;/mail&amp;#39;,
+&amp;#39;/messages&amp;#39;,
+&amp;#39;/modules&amp;#39;,
+&amp;#39;/runtime&amp;#39;,
+&amp;#39;/tests&amp;#39;,
+&amp;#39;/vagrant&amp;#39;,
+&amp;#39;/vendor&amp;#39;,
+&amp;#39;/views/user/settings&amp;#39;,
+&amp;#39;/web&amp;#39;,
+&amp;#39;/widgets&amp;#39;,
+],
+&amp;#39;format&amp;#39; =&amp;gt; &amp;#39;php&amp;#39;,
+&amp;#39;messagePath&amp;#39; =&amp;gt; __DIR__ . DIRECTORY_SEPARATOR . &amp;#39;..&amp;#39; . DIRECTORY_SEPARATOR . &amp;#39;messages&amp;#39;,
+&amp;#39;overwrite&amp;#39; =&amp;gt; true,
+];
+&lt;/code>&lt;/pre>&lt;p>Here are some samples of how the text should be wrapped.&lt;/p></description></item><item><title>Yii 2 Codeception Fixtures Gotcha</title><link>https://www.ytpor.com/2021/07/yii-2-codeception-fixtures-gotcha.html</link><pubDate>Sat, 17 Jul 2021 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/07/yii-2-codeception-fixtures-gotcha.html</guid><description>&lt;p>We use MongoDB (important point) with our Yii 2 applicaton.&lt;/p>
+&lt;p>While setting up our API test fixtures in our Cest file, &lt;strong>$I-&amp;gt;grabFixture&lt;/strong> was not able to find the data we wanted eventhough we have defined it within the dataFile.&lt;/p>
+&lt;pre tabindex="0">&lt;code>[yii\base\ErrorException] Trying to get property &amp;#39;client_id&amp;#39; of non-object
+&lt;/code>&lt;/pre>&lt;p>Here&amp;rsquo;s what the dataFile looks like.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;?php
+// This doesn&amp;#39;t work.
+return [
+&amp;#39;client_one&amp;#39; =&amp;gt;
+[
+&amp;#39;client_id&amp;#39; =&amp;gt; &amp;#39;mytestclient&amp;#39;,
+],
+];
+&lt;/code>&lt;/pre>&lt;p>After some experimentation, we&amp;rsquo;ve found that we need to set the &lt;strong>_id&lt;/strong> within the dataFile in order to get &lt;strong>$I-&amp;gt;grabFixture&lt;/strong> to work properly.&lt;/p></description></item><item><title>Yii 2 Codeception API Test</title><link>https://www.ytpor.com/2021/06/yii-2-codeception-api-test.html</link><pubDate>Wed, 30 Jun 2021 21:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/06/yii-2-codeception-api-test.html</guid><description>&lt;p>My API uses the Yii2 advanced template. It uses symfony/dotenv to read the .env. The .env is loaded in all the configurations.&lt;/p>
+&lt;pre tabindex="0">&lt;code>$dotenv = new Symfony\Component\Dotenv\Dotenv;
+$dotenv-&amp;gt;load(__DIR__ . &amp;#39;/../../.env&amp;#39;);
+&lt;/code>&lt;/pre>&lt;p>While running the Codeception api test, I came across this error.&lt;/p>
+&lt;pre tabindex="0">&lt;code>[PHPUnit\Framework\Exception] Undefined index: HOST at ../common/config/main-local.php:7
+&lt;/code>&lt;/pre>&lt;p>After much digging around, I&amp;rsquo;ve realized that &lt;strong>I need to load Symfony\Component\Dotenv\Dotenv in common/config/codeception-local.php&lt;/strong> Thus, I have updated that file in the environment folder, and reran &lt;strong>php init&lt;/strong>.&lt;/p></description></item><item><title>Yii 2 404 Not Found</title><link>https://www.ytpor.com/2021/06/yii-2-404-not-found.html</link><pubDate>Tue, 29 Jun 2021 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/06/yii-2-404-not-found.html</guid><description>&lt;p>After setting up a new application using Yii 2 Advanced Project Template, the very first time you want to load your new controller, if you are met with a 404 Not Found, one very likely cause is that you do not have a .htaccess in your web folder.&lt;/p></description></item><item><title>Yii2 URL manager cache class</title><link>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</link><pubDate>Thu, 09 Apr 2020 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</guid><description>&lt;p>You might come across the below warning if you have not set a cache to your Yii2 application while using URL manager.&lt;/p>
+&lt;pre tabindex="0">&lt;code>Unable to use cache for URL manager: Failed to instantiate component or class &amp;#34;cache&amp;#34;.
+&lt;/code>&lt;/pre>&lt;p>In order to remove that warning, setup a cache in your application&amp;rsquo;s configuration.&lt;/p>
+&lt;p>We are using the DummyCache class here as we have yet to decide on one that we want to use.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;#39;components&amp;#39; =&amp;gt; [
+&amp;#39;cache&amp;#39; =&amp;gt; [
+&amp;#39;class&amp;#39; =&amp;gt; &amp;#39;yii\caching\DummyCache&amp;#39;, // FIXME
+],
+],
+&lt;/code>&lt;/pre></description></item><item><title>Setup User and RBAC Management in Yii2</title><link>https://www.ytpor.com/2019/08/setup-user-and-rbac-management-in-yii2.html</link><pubDate>Mon, 26 Aug 2019 23:05:00 +0800</pubDate><guid>https://www.ytpor.com/2019/08/setup-user-and-rbac-management-in-yii2.html</guid><description>&lt;p>My goal for this exercise is to have User and RBAC management in my Yii 2 application.&lt;/p>
+&lt;p>I&amp;rsquo;ve started out with the Yii 2 Basic Project Template and I would be adding the Yii2-user and Yii2-rbac extensions to my web application.&lt;/p>
+&lt;p>Here are some of the steps I have taken to install and configure the extensions.&lt;/p>
+&lt;h3 id="step-1-installation">Step 1: Installation&lt;/h3>
+&lt;p>Install the packages.&lt;/p>
+&lt;pre tabindex="0">&lt;code>composer require dektrium/yii2-user
+composer require dektrium/yii2-rbac
+&lt;/code>&lt;/pre>&lt;h3 id="step-2-configure-the-web-application">Step 2: Configure the web application&lt;/h3>
+&lt;p>NOTE: Make sure that you don&amp;rsquo;t have user component configuration in your config files.
+Add the user and rbac module to the web applcation config.&lt;/p></description></item><item><title>Nginx Configuration for Multiple Yii2 Site Under Same Domain</title><link>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</link><pubDate>Wed, 27 Dec 2017 16:03:00 +0800</pubDate><guid>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</guid><description>&lt;p>This nginx configuration will allow you to run multiple instances of Yii2 in sub folders under the same domain. Eg. &lt;a href="http://advanced.local/">http://advanced.local/&lt;/a> and &lt;a href="http://advanced.local/subfolder/">http://advanced.local/subfolder/&lt;/a>&lt;/p>
+&lt;pre tabindex="0">&lt;code>server {
+listen 80; # listen for IPv4
+server_name advanced.local;
+set $root_path /var/www/main/web;
+root $root_path;
+index index.html index.php;
+charset utf-8;
+client_max_body_size 100M;
+location / {
+root $root_path;
+try_files $uri $uri/ /index.php$is_args$args;
+}
+location ~ \.php$ {
+try_files $uri /$uri =404;
+fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+include fastcgi_params;
+fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+}
+location ^~ /subfolder {
+alias /var/www/subfolder/web;
+if (!-e $request_filename) { rewrite ^ /subfolder/index.php last; }
+location ~ \.php$ {
+if (!-f $request_filename) { return 404; }
+include fastcgi_params;
+fastcgi_param SCRIPT_FILENAME $request_filename;
+fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+}
+}
+location ~* \.(htaccess|htpasswd|svn|git) {
+deny all;
+}
+}
+&lt;/code>&lt;/pre></description></item></channel></rss>

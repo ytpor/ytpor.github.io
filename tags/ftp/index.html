@@ -4,7 +4,9 @@ yum install vsftpd Added these to the security group if you are running AWS EC2
 Add port range 20-21 Add port range 1024-1048
 vi /etc/vsftpd/vsftpd.conf Set anonymous_enable=NO Set chroot_local_user=YES Add these
 pasv_enable=YES pasv_min_port=1024 pasv_max_port=1048 pasv_address=&lt;Public IP of your instance> sudo service vsftpd restart To make sure that the service is started on reboot
-chkconfig --level 345 vsftpd on Create new FTP User...</p></div><footer class=entry-footer>&lt;span title='2016-03-11 20:00:00 +0800 +0800'>March 11, 2016&lt;/span></footer><a class=entry-link aria-label="post link to Running FTP on CentOS" href=https://www.ytpor.com/2016/03/running-ftp-on-centos.html></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://www.ytpor.com/>YT Por</a></span>
+chkconfig --level 345 vsftpd on Create new FTP User
+useradd -d /path/to/new/home/dir -G apache userNameHere chown userNameHere:apache /path/to/new/home/dir passwd userNameHere The log file can be found in /var/log/xferlog
+...</p></div><footer class=entry-footer>&lt;span title='2016-03-11 20:00:00 +0800 +0800'>March 11, 2016&lt;/span></footer><a class=entry-link aria-label="post link to Running FTP on CentOS" href=https://www.ytpor.com/2016/03/running-ftp-on-centos.html></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://www.ytpor.com/>YT Por</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

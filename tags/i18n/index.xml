@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>I18n on YT Por</title><link>https://www.ytpor.com/tags/i18n/</link><description>Recent content in I18n on YT Por</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 12 May 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/i18n/index.xml" rel="self" type="application/rss+xml"/><item><title>Yii2 Internationalization (i18n) for advanced template</title><link>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</link><pubDate>Fri, 12 May 2023 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</guid><description>We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).
-In each of our application, we have a translation configuration. This is needed to generate the translation. The files would be generated in backend/messages, common/messages or frontend/messages.
-Here&amp;rsquo;s a sample.
-&amp;lt;?php // backend/config/i18n.php // common/config/i18n.php // frontend/config/i18n.php return [ &amp;#39;sourcePath&amp;#39; =&amp;gt; __DIR__ . DIRECTORY_SEPARATOR . &amp;#39;..&amp;#39;, &amp;#39;languages&amp;#39; =&amp;gt; [ &amp;#39;zh-CN&amp;#39;, ], &amp;#39;translator&amp;#39; =&amp;gt; &amp;#39;Yii::t&amp;#39;, &amp;#39;sort&amp;#39; =&amp;gt; true, &amp;#39;removeUnused&amp;#39; =&amp;gt; true, &amp;#39;markUnused&amp;#39; =&amp;gt; true, &amp;#39;only&amp;#39; =&amp;gt; [&amp;#39;*.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>I18n on YT Por</title><link>https://www.ytpor.com/tags/i18n/</link><description>Recent content in I18n on YT Por</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 12 May 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/i18n/index.xml" rel="self" type="application/rss+xml"/><item><title>Yii2 Internationalization (i18n) for advanced template</title><link>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</link><pubDate>Fri, 12 May 2023 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</guid><description>&lt;p>We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).&lt;/p>
+&lt;p>In each of our application, we have a translation configuration. This is needed to generate the translation. The files would be generated in &lt;code>backend/messages&lt;/code>, &lt;code>common/messages&lt;/code> or &lt;code>frontend/messages&lt;/code>.&lt;/p>
+&lt;p>Here&amp;rsquo;s a sample.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;?php
+// backend/config/i18n.php
+// common/config/i18n.php
+// frontend/config/i18n.php
+return [
+&amp;#39;sourcePath&amp;#39; =&amp;gt; __DIR__ . DIRECTORY_SEPARATOR . &amp;#39;..&amp;#39;,
+&amp;#39;languages&amp;#39; =&amp;gt; [
+&amp;#39;zh-CN&amp;#39;,
+],
+&amp;#39;translator&amp;#39; =&amp;gt; &amp;#39;Yii::t&amp;#39;,
+&amp;#39;sort&amp;#39; =&amp;gt; true,
+&amp;#39;removeUnused&amp;#39; =&amp;gt; true,
+&amp;#39;markUnused&amp;#39; =&amp;gt; true,
+&amp;#39;only&amp;#39; =&amp;gt; [&amp;#39;*.php&amp;#39;],
+&amp;#39;except&amp;#39; =&amp;gt; [
+&amp;#39;.svn&amp;#39;,
+&amp;#39;.git&amp;#39;,
+&amp;#39;.gitignore&amp;#39;,
+&amp;#39;.gitkeep&amp;#39;,
+&amp;#39;.hgignore&amp;#39;,
+&amp;#39;.hgkeep&amp;#39;,
+&amp;#39;/assets&amp;#39;,
+&amp;#39;/command&amp;#39;,
+&amp;#39;/config&amp;#39;,
+&amp;#39;/mail&amp;#39;,
+&amp;#39;/messages&amp;#39;,
+&amp;#39;/modules&amp;#39;,
+&amp;#39;/runtime&amp;#39;,
+&amp;#39;/tests&amp;#39;,
+&amp;#39;/vagrant&amp;#39;,
+&amp;#39;/vendor&amp;#39;,
+&amp;#39;/views/user/settings&amp;#39;,
+&amp;#39;/web&amp;#39;,
+&amp;#39;/widgets&amp;#39;,
+],
+&amp;#39;format&amp;#39; =&amp;gt; &amp;#39;php&amp;#39;,
+&amp;#39;messagePath&amp;#39; =&amp;gt; __DIR__ . DIRECTORY_SEPARATOR . &amp;#39;..&amp;#39; . DIRECTORY_SEPARATOR . &amp;#39;messages&amp;#39;,
+&amp;#39;overwrite&amp;#39; =&amp;gt; true,
+];
+&lt;/code>&lt;/pre>&lt;p>Here are some samples of how the text should be wrapped.&lt;/p></description></item></channel></rss>

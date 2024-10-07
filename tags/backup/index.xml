@@ -1,2 +1,158 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Backup on YT Por</title><link>https://www.ytpor.com/tags/backup/</link><description>Recent content in Backup on YT Por</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 21 Mar 2016 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/backup/index.xml" rel="self" type="application/rss+xml"/><item><title>Various Backup Scripts</title><link>https://www.ytpor.com/2016/03/various-backup-scripts.html</link><pubDate>Mon, 21 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/various-backup-scripts.html</guid><description>Here are some sample backup scripts that I&amp;rsquo;ve used to back up various things in our network. These scripts uses Amazon S3 as the storage, and also s3cmd.
-Application #!/bin/sh # Site Backup script # # application_backup.sh # Initialize variables specific for this server # To exclude directory, update in code under Exclude directory LOG_FILE=&amp;#34;/var/log/site-backup.log&amp;#34; SITE_PATH=&amp;#34;/var/www/&amp;#34; SITE_BACKUP_PATH=&amp;#34;/var/script/backup&amp;#34; SITE=( name_of_directory_one name_of_directory_two ) # Definition TIMESTAMP=`date &amp;#34;+%Y-%m-%d %H:%M:%S&amp;#34;` CURRENT_YEAR=`date &amp;#34;+%Y&amp;#34;` CURRENT_MONTH=`date &amp;#34;+%Y-%m&amp;#34;` TODAY_DATE=`date &amp;#34;+%Y-%m-%d&amp;#34;` S3_PATH=s3://name-of-s3-bucket/application/${CURRENT_YEAR}/${CURRENT_MONTH} # Remove Site Backup older than 15 days /usr/bin/find ${SITE_BACKUP_PATH} -type f -mtime +15 -delete echo &amp;#34;Site Backup Log: &amp;#34; ${TIMESTAMP} &amp;gt;&amp;gt; ${LOG_FILE} echo -e &amp;#34;--------------------------------------------&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} echo -e &amp;#34;&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} # Loop through the Site Repository for i in ${SITE[@]} do # Exclude directory EXCLUDE=&amp;#39;&amp;#39; case $i in account.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Backup on YT Por</title><link>https://www.ytpor.com/tags/backup/</link><description>Recent content in Backup on YT Por</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 21 Mar 2016 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/backup/index.xml" rel="self" type="application/rss+xml"/><item><title>Various Backup Scripts</title><link>https://www.ytpor.com/2016/03/various-backup-scripts.html</link><pubDate>Mon, 21 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/various-backup-scripts.html</guid><description>&lt;p>Here are some sample backup scripts that I&amp;rsquo;ve used to back up various things in our network. These scripts uses Amazon S3 as the storage, and also s3cmd.&lt;/p>
+&lt;h3 id="application">Application&lt;/h3>
+&lt;pre tabindex="0">&lt;code>#!/bin/sh
+# Site Backup script
+#
+# application_backup.sh
+# Initialize variables specific for this server
+# To exclude directory, update in code under Exclude directory
+LOG_FILE=&amp;#34;/var/log/site-backup.log&amp;#34;
+SITE_PATH=&amp;#34;/var/www/&amp;#34;
+SITE_BACKUP_PATH=&amp;#34;/var/script/backup&amp;#34;
+SITE=(
+name_of_directory_one
+name_of_directory_two
+)
+# Definition
+TIMESTAMP=`date &amp;#34;+%Y-%m-%d %H:%M:%S&amp;#34;`
+CURRENT_YEAR=`date &amp;#34;+%Y&amp;#34;`
+CURRENT_MONTH=`date &amp;#34;+%Y-%m&amp;#34;`
+TODAY_DATE=`date &amp;#34;+%Y-%m-%d&amp;#34;`
+S3_PATH=s3://name-of-s3-bucket/application/${CURRENT_YEAR}/${CURRENT_MONTH}
+# Remove Site Backup older than 15 days
+/usr/bin/find ${SITE_BACKUP_PATH} -type f -mtime +15 -delete
+echo &amp;#34;Site Backup Log: &amp;#34; ${TIMESTAMP} &amp;gt;&amp;gt; ${LOG_FILE}
+echo -e &amp;#34;--------------------------------------------&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE}
+echo -e &amp;#34;&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE}
+# Loop through the Site Repository
+for i in ${SITE[@]}
+do
+# Exclude directory
+EXCLUDE=&amp;#39;&amp;#39;
+case $i in
+account.fxprimus.com) exclude=&amp;#34;--exclude api --exclude assets \
+--exclude nfiles --exclude nimages \
+--exclude nlanguages --exclude ntemplates&amp;#34;;;
+esac
+# Backup Site
+cd ${SITE_PATH}
+tar -zcf ${SITE_BACKUP_PATH}/$i-${TODAY_DATE}.tar.gz . ${EXCLUDE}
+# Transfer the file to Amazon S3
+s3cmd put --acl-private --guess-mime-type \
+${SITE_BACKUP_PATH}/$i-${TODAY_DATE}.tar.gz \
+${S3_PATH}/$i-${TODAY_DATE}.tar.gz &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+if [ &amp;#34;$?&amp;#34; -eq 1 ]
+then
+echo -e &amp;#34;***SITE BACKUP JOB, THERE WERE ERRORS***&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+else
+echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+fi
+done
+&lt;/code>&lt;/pre>&lt;h3 id="mysql">MySQL&lt;/h3>
+&lt;pre tabindex="0">&lt;code>#!/bin/sh
+# MySQL Backup script
+#
+# db_backup.sh
+# In summary, this is what is going to happen.
+# make directory
+# change directory
+# dump file
+# compress directory
+# remove directory
+# upload compressed file
+# Initialize variables specific for this server
+MYSQL_SOURCE_HOST=192.168.3.100
+MYSQL_DATABASE=this_is_my_database
+MYSQL_SOURCE_USER=i_am_db_user
+MYSQL_SOURCE_PASS=i_am_db_password
+SRC_CONN=&amp;#34;-h${MYSQL_SOURCE_HOST} -u${MYSQL_SOURCE_USER} -p${MYSQL_SOURCE_PASS}&amp;#34;
+MYSQL_TABLE=(
+tbl_one
+tbl_two
+)
+LOG_FILE=/var/log/mysql-backup.log
+MYSQL_BACKUP_PATH=/var/script/backup
+# Definition
+TIMESTAMP=`date &amp;#34;+%Y-%m-%d %H:%M:%S&amp;#34;`
+CURRENT_YEAR=`date &amp;#34;+%Y&amp;#34;`
+CURRENT_MONTH=`date &amp;#34;+%Y-%m&amp;#34;`
+TODAY_DATE=`date &amp;#34;+%Y-%m-%d&amp;#34;`
+EPOCH=`date +%s`
+S3_PATH=s3://name-of-s3-bucket/db/${CURRENT_YEAR}/${CURRENT_MONTH}/${TODAY_DATE}
+# Remove MySQL Backup older than 3 days
+/usr/bin/find ${MYSQL_BACKUP_PATH} -type f -mtime +3 -delete
+echo &amp;#34;MySQL Backup Log: &amp;#34; ${TIMESTAMP} &amp;gt;&amp;gt; ${LOG_FILE}
+echo -e &amp;#34;--------------------------------------------&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE}
+echo -e &amp;#34;&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE}
+MYSQLDUMP_OPTIONS=&amp;#34;--hex-blob --compress --lock-tables=false&amp;#34;
+# Loop through the tables
+for TBL in &amp;#34;${MYSQL_TABLE[@]}&amp;#34;
+do
+FILENAME=${TBL}-${TODAY_DATE}-${EPOCH}
+# Backup MySQL
+mysqldump ${SRC_CONN} ${MYSQLDUMP_OPTIONS} ${MYSQL_DATABASE} ${TBL} \
+&amp;gt; ${MYSQL_BACKUP_PATH}/${FILENAME}.sql
+# Compress today&amp;#39;s directory
+tar -zcf ${MYSQL_BACKUP_PATH}/${FILENAME}.tar.gz -C ${MYSQL_BACKUP_PATH} ${FILENAME}.sql
+# Transfer the file to Amazon S3
+s3cmd put --acl-private --guess-mime-type \
+${MYSQL_BACKUP_PATH}/${FILENAME}.tar.gz \
+${S3_PATH}/${FILENAME}.tar.gz &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+done
+if [ &amp;#34;$?&amp;#34; -eq 1 ]
+then
+echo -e &amp;#34;***MySQL BACKUP JOB, THERE WERE ERRORS***&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+else
+echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+fi
+&lt;/code>&lt;/pre>&lt;h3 id="svn-repository">SVN Repository&lt;/h3>
+&lt;pre tabindex="0">&lt;code>#!/bin/sh
+# SVN Off Site Backup script
+#
+# svn_backup.sh
+# Input from command line
+SVN_REPOSITORY=($1)
+# Definition
+TIMESTAMP=`date &amp;#34;+%Y-%m-%d %H:%M:%S&amp;#34;`
+CURRENT_YEAR=`date &amp;#34;+%Y&amp;#34;`
+CURRENT_MONTH=`date &amp;#34;+%Y-%m&amp;#34;`
+TODAY_DATE=`date &amp;#34;+%Y-%m-%d&amp;#34;`
+EPOCH=`date +%s`
+LOG_FILE=/var/log/svn-backup.log
+SVN_BACKUP_PATH=/var/script/backup
+SVN_PATH=/var/svn/repos
+S3_PATH=s3://name-of-s3-bucket/svn/${CURRENT_YEAR}/${CURRENT_MONTH}
+# Remove SVN Backup older than 7 days
+/usr/bin/find ${SVN_BACKUP_PATH} -type f -mtime +7 -delete
+echo &amp;#34;SVN Offsite Backup Log: &amp;#34; ${TIMESTAMP} &amp;gt;&amp;gt; ${LOG_FILE}
+echo -e &amp;#34;--------------------------------------------&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE}
+echo -e &amp;#34;&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE}
+# Loop through the SVN Repository
+for i in ${SVN_REPOSITORY[@]}
+do
+FILENAME=$i-${TODAY_DATE}-${EPOCH}
+# Backup SVN
+svnadmin dump ${SVN_PATH}/$i | gzip &amp;gt; ${SVN_BACKUP_PATH}/${FILENAME}.svndump.gz
+# Transfer the file to Amazon S3
+s3cmd put --acl-private --guess-mime-type \
+${SVN_BACKUP_PATH}/${FILENAME}.svndump.gz \
+${S3_PATH}/${FILENAME}.svndump.gz &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+if [ &amp;#34;$?&amp;#34; -eq 1 ]
+then
+echo -e &amp;#34;***SVN OFFSITE BACKUP JOB, THERE WERE ERRORS***&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+else
+echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
+fi
+done
+&lt;/code>&lt;/pre>&lt;h3 id="svn-repository-to-backup">SVN Repository to Backup&lt;/h3>
+&lt;pre tabindex="0">&lt;code>#!/bin/sh
+# SVN Repository to Backup
+#
+# call_backup.sh
+svn_repository=(
+my-project-number-one
+my-project-number-two
+my-project-number-three
+)
+/var/script/svn_backup.sh &amp;#34;${svn_repository[*]}&amp;#34;
+&lt;/code>&lt;/pre></description></item></channel></rss>
