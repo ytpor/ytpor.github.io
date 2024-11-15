@@ -11,10 +11,6 @@ tags:
 - cloudwatch
 - aws
 - lambda
-cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg"
-  alt: "Telegram"
-  relative: false
 ---
 
 We have setup Amazon Cloudwatch alarms to keep track of various metrics. In a situation where a particular alarm is triggered, a notification is sent to a Amazon Notification Topic. Within that Amazon Notification Topic, one of the subcription uses the lambda protocol. It is through this subscription which we would get Amazon Lambda to send a message to [Jaconda](https://jaconda.im/) - a Telegram Smartbot.

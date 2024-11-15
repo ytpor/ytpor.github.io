@@ -6,10 +6,6 @@ url: /2016/03/running-ftp-on-centos.html
 tags:
 - centos
 - ftp
-cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Centos-logo-light.svg"
-  alt: "CentOS"
-  relative: false
 ---
 
 Here's how you can easily setup FTP on CentOS

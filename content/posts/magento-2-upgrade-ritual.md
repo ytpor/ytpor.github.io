@@ -7,10 +7,6 @@ tags:
 - update
 - upgrade
 - magento 2
-cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/5/55/Magento_Logo.svg"
-  alt: "Magento"
-  relative: false
 ---
 
 Assuming that you are on Magento version 2.0.6 and would like to upgrade to 2.0.7

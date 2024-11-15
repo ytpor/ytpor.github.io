@@ -7,10 +7,6 @@ tags:
 - fixture
 - yii2
 - codeception
-cover:
-  image: "https://upload.wikimedia.org/wikipedia/en/6/6b/Yii-logo-transparent.png"
-  alt: "Yii"
-  relative: false
 ---
 
 We use MongoDB (important point) with our Yii 2 applicaton.

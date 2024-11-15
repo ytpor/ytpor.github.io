@@ -7,10 +7,6 @@ tags:
 - wordpress
 - blogger
 - migration
-cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg"
-  alt: "WordPress"
-  relative: false
 ---
 
 As per the subject, migrating a blog from Wordpress to Blogger isn't as hard as most would have imagined, On the down side, it's a bit tedious if you have stored your images with your Wordpress blog. For my case, I have always stored my images on Picasa Web, so, I need not go through the process of copying the images out from the Wordpress blog.

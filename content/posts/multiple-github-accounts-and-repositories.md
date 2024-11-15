@@ -5,10 +5,6 @@ draft: false
 url: /2023/05/multiple-github-accounts-and-repositories.html
 tags:
 - github
-cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
-  alt: "GitHub"
-  relative: false
 ---
 
 We work in an environment where we have multiple GitHub accounts that is tied to different repositories. It took us a while to figure out how to properly set this up, so that the correct identify is tied to the correct repository.

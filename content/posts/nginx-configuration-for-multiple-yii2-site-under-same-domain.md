@@ -6,10 +6,6 @@ url: /2017/12/nginx-configuration-for-multiple-yii2.html
 tags:
 - nginx
 - yii2
-cover:
-  image: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg"
-  alt: "Nginx"
-  relative: false
 ---
 
 This nginx configuration will allow you to run multiple instances of Yii2 in sub folders under the same domain. Eg. http://advanced.local/ and http://advanced.local/subfolder/

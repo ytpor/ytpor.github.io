@@ -8,10 +8,6 @@ tags:
 - mysql
 - ssh
 - windows
-cover:
-  image: "https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg"
-  alt: "MySQL"
-  relative: false
 ---
 
 This setup is done on Windows 11, using HeidiSQL. We are using a private key to SSH to the server. Make sure that you have SSH to the server at least once, and has the server is listed in `~/.ssh/known_hosts`
