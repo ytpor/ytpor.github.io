@@ -1,30 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Centos on YT Por</title><link>https://www.ytpor.com/tags/centos/</link><description>Recent content in Centos on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Fri, 20 Mar 2020 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/centos/index.xml" rel="self" type="application/rss+xml"/><item><title>S3cmd on CentOS 7</title><link>https://www.ytpor.com/2020/03/s3cmd-on-centos-7.html</link><pubDate>Fri, 20 Mar 2020 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/03/s3cmd-on-centos-7.html</guid><description>&lt;p>S3cmd is a command line tool that we&amp;rsquo;ve used for uploading, retrieving and managing data in Amazon S3.
-To install S3cmd, you just need to run the install command.&lt;/p>
-&lt;pre tabindex="0">&lt;code>yum install s3cmd
-&lt;/code>&lt;/pre></description></item><item><title>S3cmd on CentOS 6</title><link>https://www.ytpor.com/2016/03/s3cmd-on-centos-6.html</link><pubDate>Wed, 30 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/s3cmd-on-centos-6.html</guid><description>&lt;p>S3cmd is a command line tool that we&amp;rsquo;ve used for uploading, retrieving and managing data in Amazon S3.&lt;/p>
-&lt;p>To install S3cmd, you would need to download the .repo for the tool, and then, run install.&lt;/p>
-&lt;pre tabindex="0">&lt;code>cd /etc/yum.repos.d
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Centos on YT Por</title><link>https://www.ytpor.com/tags/centos/</link><description>Recent content in Centos on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Fri, 20 Mar 2020 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/centos/index.xml" rel="self" type="application/rss+xml"/><item><title>S3cmd on CentOS 7</title><link>https://www.ytpor.com/2020/03/s3cmd-on-centos-7.html</link><pubDate>Fri, 20 Mar 2020 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/03/s3cmd-on-centos-7.html</guid><description>&lt;p&gt;S3cmd is a command line tool that we&amp;rsquo;ve used for uploading, retrieving and managing data in Amazon S3.
+To install S3cmd, you just need to run the install command.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;yum install s3cmd
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>S3cmd on CentOS 6</title><link>https://www.ytpor.com/2016/03/s3cmd-on-centos-6.html</link><pubDate>Wed, 30 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/s3cmd-on-centos-6.html</guid><description>&lt;p&gt;S3cmd is a command line tool that we&amp;rsquo;ve used for uploading, retrieving and managing data in Amazon S3.&lt;/p&gt;
+&lt;p&gt;To install S3cmd, you would need to download the .repo for the tool, and then, run install.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cd /etc/yum.repos.d
 wget http://s3tools.org/repo/RHEL_6/s3tools.repo
 yum install s3cmd
-&lt;/code>&lt;/pre>&lt;p>Answer yes when asked to accept a new GPG key.&lt;/p>
-&lt;p>Note: The latest version of s3cmd requires python 2.6. If you come across this error Problem: ImportError: No module named S3.Exceptions, chances are, you do not have the correct version. One work around is as follows:-&lt;/p></description></item><item><title>Running FTP on CentOS</title><link>https://www.ytpor.com/2016/03/running-ftp-on-centos.html</link><pubDate>Fri, 11 Mar 2016 20:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/running-ftp-on-centos.html</guid><description>&lt;p>Here&amp;rsquo;s how you can easily setup FTP on CentOS&lt;/p>
-&lt;pre tabindex="0">&lt;code>yum install vsftpd
-&lt;/code>&lt;/pre>&lt;p>Added these to the security group if you are running AWS EC2&lt;/p>
-&lt;p>Add port range 20-21
-Add port range 1024-1048&lt;/p>
-&lt;pre tabindex="0">&lt;code>vi /etc/vsftpd/vsftpd.conf
-&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>Set anonymous_enable=NO
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Answer yes when asked to accept a new GPG key.&lt;/p&gt;
+&lt;p&gt;Note: The latest version of s3cmd requires python 2.6. If you come across this error Problem: ImportError: No module named S3.Exceptions, chances are, you do not have the correct version. One work around is as follows:-&lt;/p&gt;</description></item><item><title>Running FTP on CentOS</title><link>https://www.ytpor.com/2016/03/running-ftp-on-centos.html</link><pubDate>Fri, 11 Mar 2016 20:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/running-ftp-on-centos.html</guid><description>&lt;p&gt;Here&amp;rsquo;s how you can easily setup FTP on CentOS&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;yum install vsftpd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Added these to the security group if you are running AWS EC2&lt;/p&gt;
+&lt;p&gt;Add port range 20-21
+Add port range 1024-1048&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;vi /etc/vsftpd/vsftpd.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;Set anonymous_enable=NO
 Set chroot_local_user=YES
-&lt;/code>&lt;/pre>&lt;p>Add these&lt;/p>
-&lt;pre tabindex="0">&lt;code>pasv_enable=YES
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add these&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;pasv_enable=YES
 pasv_min_port=1024
 pasv_max_port=1048
 pasv_address=&amp;lt;Public IP of your instance&amp;gt;
-&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>sudo service vsftpd restart
-&lt;/code>&lt;/pre>&lt;p>To make sure that the service is started on reboot&lt;/p>
-&lt;pre tabindex="0">&lt;code>chkconfig --level 345 vsftpd on
-&lt;/code>&lt;/pre>&lt;p>Create new FTP User&lt;/p>
-&lt;pre tabindex="0">&lt;code>useradd -d /path/to/new/home/dir -G apache userNameHere
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;sudo service vsftpd restart
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To make sure that the service is started on reboot&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;chkconfig --level 345 vsftpd on
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create new FTP User&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;useradd -d /path/to/new/home/dir -G apache userNameHere
 chown userNameHere:apache /path/to/new/home/dir
 passwd userNameHere
-&lt;/code>&lt;/pre>&lt;p>The log file can be found in /var/log/xferlog&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The log file can be found in /var/log/xferlog&lt;/p&gt;</description></item></channel></rss>

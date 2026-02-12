@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>YT Por</title><link>https://www.ytpor.com/</link><description>Recent content on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Fri, 30 May 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Could not resolve org.springframework.boot:spring-boot-gradle-plugin</title><link>https://www.ytpor.com/2025/05/could-not-resolve-spring-boot-gradle-plugin/</link><pubDate>Fri, 30 May 2025 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2025/05/could-not-resolve-spring-boot-gradle-plugin/</guid><description>&lt;p>A snippet of my &lt;code>build.gradle&lt;/code> looks like this:&lt;/p>
-&lt;pre tabindex="0">&lt;code>plugins {
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>YT Por</title><link>https://www.ytpor.com/</link><description>Recent content on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Thu, 12 Feb 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Docker on server while connecting through VPN</title><link>https://www.ytpor.com/2026/02/install-docker-while-on-vpn/</link><pubDate>Thu, 12 Feb 2026 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2026/02/install-docker-while-on-vpn/</guid><description>&lt;p&gt;While connected to a client&amp;rsquo;s VPN, upon installing Docker on one of their server, we lost connection to that server. Initially, we thought some VPN security rules had kicked in. After further investigation, it was brought to our attention that the VPN network range conflicted with the default Docker network range.&lt;/p&gt;
+&lt;p&gt;Based on what had happened, we have updated our installation work flow to the below.&lt;/p&gt;
+&lt;p&gt;Before intalling Docker, mask the Docker service.&lt;/p&gt;</description></item><item><title>Could not resolve org.springframework.boot:spring-boot-gradle-plugin</title><link>https://www.ytpor.com/2025/05/could-not-resolve-spring-boot-gradle-plugin/</link><pubDate>Fri, 30 May 2025 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2025/05/could-not-resolve-spring-boot-gradle-plugin/</guid><description>&lt;p&gt;A snippet of my &lt;code&gt;build.gradle&lt;/code&gt; looks like this:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;plugins {
 id &amp;#39;java&amp;#39;
 id &amp;#39;org.springframework.boot&amp;#39; version &amp;#39;3.5.0&amp;#39;
 id &amp;#39;io.spring.dependency-management&amp;#39; version &amp;#39;1.1.7&amp;#39;
@@ -10,69 +12,69 @@ languageVersion = JavaLanguageVersion.of(17)
 }
 }
 ...
-&lt;/code>&lt;/pre>&lt;p>While using &lt;code>VS Code&lt;/code>, for reason unknown to me, the &lt;code>PROBLEMS&lt;/code> tab shows the below:&lt;/p>
-&lt;pre tabindex="0">&lt;code>The supplied phased action failed with an exception.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;While using &lt;code&gt;VS Code&lt;/code&gt;, for reason unknown to me, the &lt;code&gt;PROBLEMS&lt;/code&gt; tab shows the below:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;The supplied phased action failed with an exception.
 A problem occurred configuring root project &amp;#39;springboot-challenge&amp;#39;.
 Could not resolve all artifacts for configuration &amp;#39;classpath&amp;#39;.
 Could not resolve org.springframework.boot:spring-boot-gradle-plugin:3.5.0.
 Required by:
 root project : &amp;gt; org.springframework.boot:org.springframework.boot.gradle.plugin:3.5.0
 Dependency requires at least JVM runtime version 17. This build uses a Java 11 JVM.
-&lt;/code>&lt;/pre>&lt;p>There was no issue running &lt;code>./gradlew build&lt;/code> from the &lt;code>Terminal&lt;/code>.&lt;/p></description></item><item><title>SSH Tunnel to RDP to Desktop in Private Network</title><link>https://www.ytpor.com/2025/05/ssh-tunnel-to-rdp-in-private-network/</link><pubDate>Thu, 22 May 2025 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2025/05/ssh-tunnel-to-rdp-in-private-network/</guid><description>&lt;p>This setup is done on Windows 11, using WSL. We are using a private key to SSH to the server. Make sure that you have SSH to the server at least once, and has the server is listed in &lt;code>~/.ssh/known_hosts&lt;/code>&lt;/p>
-&lt;p>Assuming that our server is on 218.8.8.88, and the Windows Desktop we want to access is on 10.219.80.88 (private network).&lt;/p>
-&lt;ol>
-&lt;li>On &lt;code>WSL&lt;/code>, run &lt;code>ssh -N -L 13389:10.219.80.88:3389 218.8.8.88 -l username&lt;/code>&lt;/li>
-&lt;li>Subsequently, set the &lt;code>Computer&lt;/code> in Remote Desktop Connection to &lt;code>localhost:13389&lt;/code>.&lt;/li>
-&lt;/ol>
-&lt;pre tabindex="0">&lt;code>Computer: localhost:13389
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There was no issue running &lt;code&gt;./gradlew build&lt;/code&gt; from the &lt;code&gt;Terminal&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>SSH Tunnel to RDP to Desktop in Private Network</title><link>https://www.ytpor.com/2025/05/ssh-tunnel-to-rdp-in-private-network/</link><pubDate>Thu, 22 May 2025 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2025/05/ssh-tunnel-to-rdp-in-private-network/</guid><description>&lt;p&gt;This setup is done on Windows 11, using WSL. We are using a private key to SSH to the server. Make sure that you have SSH to the server at least once, and has the server is listed in &lt;code&gt;~/.ssh/known_hosts&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Assuming that our server is on 218.8.8.88, and the Windows Desktop we want to access is on 10.219.80.88 (private network).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;On &lt;code&gt;WSL&lt;/code&gt;, run &lt;code&gt;ssh -N -L 13389:10.219.80.88:3389 218.8.8.88 -l username&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Subsequently, set the &lt;code&gt;Computer&lt;/code&gt; in Remote Desktop Connection to &lt;code&gt;localhost:13389&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Computer: localhost:13389
 User name: Username
-&lt;/code>&lt;/pre></description></item><item><title>SSH Tunnel to MySQL in Private Network</title><link>https://www.ytpor.com/2024/10/ssh-tunnel-to-mysql-in-private-network/</link><pubDate>Mon, 07 Oct 2024 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2024/10/ssh-tunnel-to-mysql-in-private-network/</guid><description>&lt;p>This setup is done on Windows 11, using HeidiSQL. We are using a private key to SSH to the server. Make sure that you have SSH to the server at least once, and has the server is listed in &lt;code>~/.ssh/known_hosts&lt;/code>&lt;/p>
-&lt;p>Assuming that our server is on 218.8.8.88, and our MySQL is on 10.219.80.88 (private network).&lt;/p>
-&lt;ol>
-&lt;li>Open HeidiSQL.&lt;/li>
-&lt;li>Create a New Session:
-&lt;ul>
-&lt;li>Click on the &lt;code>New&lt;/code> button to create a new session.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Configure the Session:
-&lt;ul>
-&lt;li>Under the Settings tab:
-&lt;ul>
-&lt;li>&lt;strong>Network Type&lt;/strong>: Select MySQL (SSH tunnel)&lt;/li>
-&lt;li>&lt;strong>Hostname / IP&lt;/strong>: 10.219.80.88&lt;/li>
-&lt;li>&lt;strong>User&lt;/strong>: Enter your MySQL username.&lt;/li>
-&lt;li>&lt;strong>Password&lt;/strong>: Enter your MySQL password.&lt;/li>
-&lt;li>&lt;strong>Port&lt;/strong>: The default MySQL port is 3306.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>SSH tunnel tab:
-&lt;ul>
-&lt;li>Check &lt;strong>Use SSH tunnel&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>SSH executable&lt;/strong>: ssh.exe&lt;/li>
-&lt;li>&lt;strong>SSH Host + Port&lt;/strong>: Enter 218.8.8.88 (the SSH server IP) and the SSH port (default is 22).&lt;/li>
-&lt;li>&lt;strong>Username&lt;/strong>: Enter your SSH username.&lt;/li>
-&lt;li>&lt;strong>Password&lt;/strong>: Enter your SSH password or use an SSH key if you have one.&lt;/li>
-&lt;li>&lt;strong>Private key file&lt;/strong>: Locate your private key file&lt;/li>
-&lt;li>&lt;strong>Local port&lt;/strong>: 3307&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Save and Connect:
-&lt;ul>
-&lt;li>Click &lt;code>Save&lt;/code> to save the session.&lt;/li>
-&lt;li>Click &lt;code>Open&lt;/code> to establish the connection.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol></description></item><item><title>Running multiple instances of MariaDB</title><link>https://www.ytpor.com/2024/07/running-multiple-instances-of-mariadb.html</link><pubDate>Thu, 04 Jul 2024 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2024/07/running-multiple-instances-of-mariadb.html</guid><description>&lt;p>We have come across an occassion where we need to run multiple &lt;code>MariaDB&lt;/code> databases on different port on the same Windows server. For our use case, each of the database represents a particular enviroment, eg. staging, sandbox or production. The same technique that I am going to illustrate will work for &lt;code>MySQL&lt;/code>.&lt;/p>
-&lt;p>Here&amp;rsquo;s how it was done.&lt;/p>
-&lt;p>Upon installing MariaDB, we made a few copies of the data folder found in &lt;code>C:\Program Files\MariaDB 10.11\data&lt;/code>, and named them:-&lt;/p></description></item><item><title>Multiple GitHub Accounts and Repositories</title><link>https://www.ytpor.com/2023/05/multiple-github-accounts-and-repositories.html</link><pubDate>Fri, 12 May 2023 14:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/multiple-github-accounts-and-repositories.html</guid><description>&lt;p>We work in an environment where we have multiple GitHub accounts that is tied to different repositories. It took us a while to figure out how to properly set this up, so that the correct identify is tied to the correct repository.&lt;/p>
-&lt;p>Let me walk you through an example on how we did it.&lt;/p>
-&lt;p>Assuming that you have 3 identity, ie. 3 private keys, tied to 3 different GitHub repository.&lt;/p></description></item><item><title>Yii2 Internationalization (i18n) for advanced template</title><link>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</link><pubDate>Fri, 12 May 2023 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</guid><description>&lt;p>We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).&lt;/p>
-&lt;p>In each of our application, we have a translation configuration. This is needed to generate the translation. The files would be generated in &lt;code>backend/messages&lt;/code>, &lt;code>common/messages&lt;/code> or &lt;code>frontend/messages&lt;/code>.&lt;/p>
-&lt;p>Here&amp;rsquo;s a sample.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;lt;?php
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>SSH Tunnel to MySQL in Private Network</title><link>https://www.ytpor.com/2024/10/ssh-tunnel-to-mysql-in-private-network/</link><pubDate>Mon, 07 Oct 2024 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2024/10/ssh-tunnel-to-mysql-in-private-network/</guid><description>&lt;p&gt;This setup is done on Windows 11, using HeidiSQL. We are using a private key to SSH to the server. Make sure that you have SSH to the server at least once, and has the server is listed in &lt;code&gt;~/.ssh/known_hosts&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Assuming that our server is on 218.8.8.88, and our MySQL is on 10.219.80.88 (private network).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open HeidiSQL.&lt;/li&gt;
+&lt;li&gt;Create a New Session:
+&lt;ul&gt;
+&lt;li&gt;Click on the &lt;code&gt;New&lt;/code&gt; button to create a new session.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configure the Session:
+&lt;ul&gt;
+&lt;li&gt;Under the Settings tab:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Network Type&lt;/strong&gt;: Select MySQL (SSH tunnel)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hostname / IP&lt;/strong&gt;: 10.219.80.88&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User&lt;/strong&gt;: Enter your MySQL username.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password&lt;/strong&gt;: Enter your MySQL password.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Port&lt;/strong&gt;: The default MySQL port is 3306.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSH tunnel tab:
+&lt;ul&gt;
+&lt;li&gt;Check &lt;strong&gt;Use SSH tunnel&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SSH executable&lt;/strong&gt;: ssh.exe&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SSH Host + Port&lt;/strong&gt;: Enter 218.8.8.88 (the SSH server IP) and the SSH port (default is 22).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Username&lt;/strong&gt;: Enter your SSH username.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password&lt;/strong&gt;: Enter your SSH password or use an SSH key if you have one.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Private key file&lt;/strong&gt;: Locate your private key file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Local port&lt;/strong&gt;: 3307&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Save and Connect:
+&lt;ul&gt;
+&lt;li&gt;Click &lt;code&gt;Save&lt;/code&gt; to save the session.&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Open&lt;/code&gt; to establish the connection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Running multiple instances of MariaDB</title><link>https://www.ytpor.com/2024/07/running-multiple-instances-of-mariadb.html</link><pubDate>Thu, 04 Jul 2024 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2024/07/running-multiple-instances-of-mariadb.html</guid><description>&lt;p&gt;We have come across an occassion where we need to run multiple &lt;code&gt;MariaDB&lt;/code&gt; databases on different port on the same Windows server. For our use case, each of the database represents a particular enviroment, eg. staging, sandbox or production. The same technique that I am going to illustrate will work for &lt;code&gt;MySQL&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how it was done.&lt;/p&gt;
+&lt;p&gt;Upon installing MariaDB, we made a few copies of the data folder found in &lt;code&gt;C:\Program Files\MariaDB 10.11\data&lt;/code&gt;, and named them:-&lt;/p&gt;</description></item><item><title>Multiple GitHub Accounts and Repositories</title><link>https://www.ytpor.com/2023/05/multiple-github-accounts-and-repositories.html</link><pubDate>Fri, 12 May 2023 14:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/multiple-github-accounts-and-repositories.html</guid><description>&lt;p&gt;We work in an environment where we have multiple GitHub accounts that is tied to different repositories. It took us a while to figure out how to properly set this up, so that the correct identify is tied to the correct repository.&lt;/p&gt;
+&lt;p&gt;Let me walk you through an example on how we did it.&lt;/p&gt;
+&lt;p&gt;Assuming that you have 3 identity, ie. 3 private keys, tied to 3 different GitHub repository.&lt;/p&gt;</description></item><item><title>Yii2 Internationalization (i18n) for advanced template</title><link>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</link><pubDate>Fri, 12 May 2023 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</guid><description>&lt;p&gt;We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).&lt;/p&gt;
+&lt;p&gt;In each of our application, we have a translation configuration. This is needed to generate the translation. The files would be generated in &lt;code&gt;backend/messages&lt;/code&gt;, &lt;code&gt;common/messages&lt;/code&gt; or &lt;code&gt;frontend/messages&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a sample.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;?php
 // backend/config/i18n.php
 // common/config/i18n.php
 // frontend/config/i18n.php
@@ -111,11 +113,11 @@ return [
 &amp;#39;messagePath&amp;#39; =&amp;gt; __DIR__ . DIRECTORY_SEPARATOR . &amp;#39;..&amp;#39; . DIRECTORY_SEPARATOR . &amp;#39;messages&amp;#39;,
 &amp;#39;overwrite&amp;#39; =&amp;gt; true,
 ];
-&lt;/code>&lt;/pre>&lt;p>Here are some samples of how the text should be wrapped.&lt;/p></description></item><item><title>Yii 2 Codeception Fixtures Gotcha</title><link>https://www.ytpor.com/2021/07/yii-2-codeception-fixtures-gotcha.html</link><pubDate>Sat, 17 Jul 2021 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/07/yii-2-codeception-fixtures-gotcha.html</guid><description>&lt;p>We use MongoDB (important point) with our Yii 2 applicaton.&lt;/p>
-&lt;p>While setting up our API test fixtures in our Cest file, &lt;strong>$I-&amp;gt;grabFixture&lt;/strong> was not able to find the data we wanted eventhough we have defined it within the dataFile.&lt;/p>
-&lt;pre tabindex="0">&lt;code>[yii\base\ErrorException] Trying to get property &amp;#39;client_id&amp;#39; of non-object
-&lt;/code>&lt;/pre>&lt;p>Here&amp;rsquo;s what the dataFile looks like.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;lt;?php
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here are some samples of how the text should be wrapped.&lt;/p&gt;</description></item><item><title>Yii 2 Codeception Fixtures Gotcha</title><link>https://www.ytpor.com/2021/07/yii-2-codeception-fixtures-gotcha.html</link><pubDate>Sat, 17 Jul 2021 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/07/yii-2-codeception-fixtures-gotcha.html</guid><description>&lt;p&gt;We use MongoDB (important point) with our Yii 2 applicaton.&lt;/p&gt;
+&lt;p&gt;While setting up our API test fixtures in our Cest file, &lt;strong&gt;$I-&amp;gt;grabFixture&lt;/strong&gt; was not able to find the data we wanted eventhough we have defined it within the dataFile.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[yii\base\ErrorException] Trying to get property &amp;#39;client_id&amp;#39; of non-object
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s what the dataFile looks like.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;?php
 // This doesn&amp;#39;t work.
 return [
 &amp;#39;client_one&amp;#39; =&amp;gt;
@@ -123,22 +125,22 @@ return [
 &amp;#39;client_id&amp;#39; =&amp;gt; &amp;#39;mytestclient&amp;#39;,
 ],
 ];
-&lt;/code>&lt;/pre>&lt;p>After some experimentation, we&amp;rsquo;ve found that we need to set the &lt;strong>_id&lt;/strong> within the dataFile in order to get &lt;strong>$I-&amp;gt;grabFixture&lt;/strong> to work properly.&lt;/p></description></item><item><title>Yii 2 Codeception API Test</title><link>https://www.ytpor.com/2021/06/yii-2-codeception-api-test.html</link><pubDate>Wed, 30 Jun 2021 21:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/06/yii-2-codeception-api-test.html</guid><description>&lt;p>My API uses the Yii2 advanced template. It uses symfony/dotenv to read the .env. The .env is loaded in all the configurations.&lt;/p>
-&lt;pre tabindex="0">&lt;code>$dotenv = new Symfony\Component\Dotenv\Dotenv;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After some experimentation, we&amp;rsquo;ve found that we need to set the &lt;strong&gt;_id&lt;/strong&gt; within the dataFile in order to get &lt;strong&gt;$I-&amp;gt;grabFixture&lt;/strong&gt; to work properly.&lt;/p&gt;</description></item><item><title>Yii 2 Codeception API Test</title><link>https://www.ytpor.com/2021/06/yii-2-codeception-api-test.html</link><pubDate>Wed, 30 Jun 2021 21:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/06/yii-2-codeception-api-test.html</guid><description>&lt;p&gt;My API uses the Yii2 advanced template. It uses symfony/dotenv to read the .env. The .env is loaded in all the configurations.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$dotenv = new Symfony\Component\Dotenv\Dotenv;
 $dotenv-&amp;gt;load(__DIR__ . &amp;#39;/../../.env&amp;#39;);
-&lt;/code>&lt;/pre>&lt;p>While running the Codeception api test, I came across this error.&lt;/p>
-&lt;pre tabindex="0">&lt;code>[PHPUnit\Framework\Exception] Undefined index: HOST at ../common/config/main-local.php:7
-&lt;/code>&lt;/pre>&lt;p>After much digging around, I&amp;rsquo;ve realized that &lt;strong>I need to load Symfony\Component\Dotenv\Dotenv in common/config/codeception-local.php&lt;/strong> Thus, I have updated that file in the environment folder, and reran &lt;strong>php init&lt;/strong>.&lt;/p></description></item><item><title>Yii 2 Four oh Four Not Found</title><link>https://www.ytpor.com/2021/06/yii-2-found-oh-four-not-found.html</link><pubDate>Tue, 29 Jun 2021 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/06/yii-2-found-oh-four-not-found.html</guid><description>&lt;p>After setting up a new application using Yii 2 Advanced Project Template, the very first time you want to load your new controller, if you are met with a 404 Not Found, one very likely cause is that you do not have a .htaccess in your web folder.&lt;/p></description></item><item><title>Yii2 URL manager cache class</title><link>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</link><pubDate>Thu, 09 Apr 2020 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</guid><description>&lt;p>You might come across the below warning if you have not set a cache to your Yii2 application while using URL manager.&lt;/p>
-&lt;pre tabindex="0">&lt;code>Unable to use cache for URL manager: Failed to instantiate component or class &amp;#34;cache&amp;#34;.
-&lt;/code>&lt;/pre>&lt;p>In order to remove that warning, setup a cache in your application&amp;rsquo;s configuration.&lt;/p>
-&lt;p>We are using the DummyCache class here as we have yet to decide on one that we want to use.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;#39;components&amp;#39; =&amp;gt; [
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;While running the Codeception api test, I came across this error.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[PHPUnit\Framework\Exception] Undefined index: HOST at ../common/config/main-local.php:7
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After much digging around, I&amp;rsquo;ve realized that &lt;strong&gt;I need to load Symfony\Component\Dotenv\Dotenv in common/config/codeception-local.php&lt;/strong&gt; Thus, I have updated that file in the environment folder, and reran &lt;strong&gt;php init&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Yii 2 Four oh Four Not Found</title><link>https://www.ytpor.com/2021/06/yii-2-found-oh-four-not-found.html</link><pubDate>Tue, 29 Jun 2021 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2021/06/yii-2-found-oh-four-not-found.html</guid><description>&lt;p&gt;After setting up a new application using Yii 2 Advanced Project Template, the very first time you want to load your new controller, if you are met with a 404 Not Found, one very likely cause is that you do not have a .htaccess in your web folder.&lt;/p&gt;</description></item><item><title>Yii2 URL manager cache class</title><link>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</link><pubDate>Thu, 09 Apr 2020 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</guid><description>&lt;p&gt;You might come across the below warning if you have not set a cache to your Yii2 application while using URL manager.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Unable to use cache for URL manager: Failed to instantiate component or class &amp;#34;cache&amp;#34;.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In order to remove that warning, setup a cache in your application&amp;rsquo;s configuration.&lt;/p&gt;
+&lt;p&gt;We are using the DummyCache class here as we have yet to decide on one that we want to use.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;#39;components&amp;#39; =&amp;gt; [
 &amp;#39;cache&amp;#39; =&amp;gt; [
 &amp;#39;class&amp;#39; =&amp;gt; &amp;#39;yii\caching\DummyCache&amp;#39;, // FIXME
 ],
 ],
-&lt;/code>&lt;/pre></description></item><item><title>Yii2 Log using FileTarget</title><link>https://www.ytpor.com/2020/04/yii2-log-using-filetarget.html</link><pubDate>Thu, 09 Apr 2020 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/04/yii2-log-using-filetarget.html</guid><description>&lt;p>Here&amp;rsquo;s a sample Yii2 FileTarget configuration (to be added to the application&amp;rsquo;s configuration) used for logging. This configuration overwrite the default log file location, doesn&amp;rsquo;t capture the global PHP variables and also, adds a prefix to the log entry.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;#39;bootstrap&amp;#39; =&amp;gt; [
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Yii2 Log using FileTarget</title><link>https://www.ytpor.com/2020/04/yii2-log-using-filetarget.html</link><pubDate>Thu, 09 Apr 2020 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/04/yii2-log-using-filetarget.html</guid><description>&lt;p&gt;Here&amp;rsquo;s a sample Yii2 FileTarget configuration (to be added to the application&amp;rsquo;s configuration) used for logging. This configuration overwrite the default log file location, doesn&amp;rsquo;t capture the global PHP variables and also, adds a prefix to the log entry.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;#39;bootstrap&amp;#39; =&amp;gt; [
 &amp;#39;log&amp;#39;,
 ],
 &amp;#39;components&amp;#39; =&amp;gt; [
@@ -163,20 +165,20 @@ return &amp;#34;[$ip][$controller][$action]&amp;#34;;
 ],
 ],
 ],
-&lt;/code>&lt;/pre></description></item><item><title>S3cmd on CentOS 7</title><link>https://www.ytpor.com/2020/03/s3cmd-on-centos-7.html</link><pubDate>Fri, 20 Mar 2020 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/03/s3cmd-on-centos-7.html</guid><description>&lt;p>S3cmd is a command line tool that we&amp;rsquo;ve used for uploading, retrieving and managing data in Amazon S3.
-To install S3cmd, you just need to run the install command.&lt;/p>
-&lt;pre tabindex="0">&lt;code>yum install s3cmd
-&lt;/code>&lt;/pre></description></item><item><title>Setup User and RBAC Management in Yii2</title><link>https://www.ytpor.com/2019/08/setup-user-and-rbac-management-in-yii2.html</link><pubDate>Mon, 26 Aug 2019 23:05:00 +0800</pubDate><guid>https://www.ytpor.com/2019/08/setup-user-and-rbac-management-in-yii2.html</guid><description>&lt;p>My goal for this exercise is to have User and RBAC management in my Yii 2 application.&lt;/p>
-&lt;p>I&amp;rsquo;ve started out with the Yii 2 Basic Project Template and I would be adding the Yii2-user and Yii2-rbac extensions to my web application.&lt;/p>
-&lt;p>Here are some of the steps I have taken to install and configure the extensions.&lt;/p>
-&lt;h3 id="step-1-installation">Step 1: Installation&lt;/h3>
-&lt;p>Install the packages.&lt;/p>
-&lt;pre tabindex="0">&lt;code>composer require dektrium/yii2-user
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>S3cmd on CentOS 7</title><link>https://www.ytpor.com/2020/03/s3cmd-on-centos-7.html</link><pubDate>Fri, 20 Mar 2020 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/03/s3cmd-on-centos-7.html</guid><description>&lt;p&gt;S3cmd is a command line tool that we&amp;rsquo;ve used for uploading, retrieving and managing data in Amazon S3.
+To install S3cmd, you just need to run the install command.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;yum install s3cmd
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Setup User and RBAC Management in Yii2</title><link>https://www.ytpor.com/2019/08/setup-user-and-rbac-management-in-yii2.html</link><pubDate>Mon, 26 Aug 2019 23:05:00 +0800</pubDate><guid>https://www.ytpor.com/2019/08/setup-user-and-rbac-management-in-yii2.html</guid><description>&lt;p&gt;My goal for this exercise is to have User and RBAC management in my Yii 2 application.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve started out with the Yii 2 Basic Project Template and I would be adding the Yii2-user and Yii2-rbac extensions to my web application.&lt;/p&gt;
+&lt;p&gt;Here are some of the steps I have taken to install and configure the extensions.&lt;/p&gt;
+&lt;h3 id="step-1-installation"&gt;Step 1: Installation&lt;/h3&gt;
+&lt;p&gt;Install the packages.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;composer require dektrium/yii2-user
 composer require dektrium/yii2-rbac
-&lt;/code>&lt;/pre>&lt;h3 id="step-2-configure-the-web-application">Step 2: Configure the web application&lt;/h3>
-&lt;p>NOTE: Make sure that you don&amp;rsquo;t have user component configuration in your config files.
-Add the user and rbac module to the web applcation config.&lt;/p></description></item><item><title>Send Telegram Message in Group using VB Script</title><link>https://www.ytpor.com/2018/08/send-telegram-message-in-group-using-vb.html</link><pubDate>Fri, 17 Aug 2018 12:45:00 +0800</pubDate><guid>https://www.ytpor.com/2018/08/send-telegram-message-in-group-using-vb.html</guid><description>&lt;p>Here&amp;rsquo;s a vb script snippet that I have used to send Telegram message in a group from an Excel sheet.&lt;/p>
-&lt;pre tabindex="0">&lt;code>Sub sendTelegramMessage()
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="step-2-configure-the-web-application"&gt;Step 2: Configure the web application&lt;/h3&gt;
+&lt;p&gt;NOTE: Make sure that you don&amp;rsquo;t have user component configuration in your config files.
+Add the user and rbac module to the web applcation config.&lt;/p&gt;</description></item><item><title>Send Telegram Message in Group using VB Script</title><link>https://www.ytpor.com/2018/08/send-telegram-message-in-group-using-vb.html</link><pubDate>Fri, 17 Aug 2018 12:45:00 +0800</pubDate><guid>https://www.ytpor.com/2018/08/send-telegram-message-in-group-using-vb.html</guid><description>&lt;p&gt;Here&amp;rsquo;s a vb script snippet that I have used to send Telegram message in a group from an Excel sheet.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Sub sendTelegramMessage()
 Set objHttp = CreateObject(&amp;#34;MSXML2.ServerXMLHTTP&amp;#34;)
 &amp;#39; Change these accordingly
 strChat = &amp;#34;&amp;lt;chat_id&amp;gt;&amp;#34;
@@ -189,20 +191,20 @@ objHttp.Open &amp;#34;POST&amp;#34;, strUrl, False
 objHttp.setRequestHeader &amp;#34;Content-type&amp;#34;, &amp;#34;application/json&amp;#34;
 objHttp.send strJson
 End Sub
-&lt;/code>&lt;/pre></description></item><item><title>WAMP and curl</title><link>https://www.ytpor.com/2018/02/wamp-and-curl.html</link><pubDate>Fri, 09 Feb 2018 17:33:00 +0800</pubDate><guid>https://www.ytpor.com/2018/02/wamp-and-curl.html</guid><description>&lt;p>Often times, after a fresh install of WAMP server, curl stops working. You might get a hint of the issue in logs/php_error.log If not, it could be that the SSL/TLS Certificate Authority (CA) certificates has not bee setup properly.&lt;/p>
-&lt;ol>
-&lt;li>Download &lt;a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem&lt;/a>&lt;/li>
-&lt;li>Move the cacert.pem file to a folder, e.g. C:\code\ssl\cacert.pem&lt;/li>
-&lt;li>Edit the php.ini file and change the curl.cainfo parameter, e.g. curl.cainfo = &amp;ldquo;C:\code\ssl\cacert.pem&amp;rdquo;&lt;/li>
-&lt;/ol></description></item><item><title>Add and Allow New Telegram Bot to Send Message in Group</title><link>https://www.ytpor.com/2018/02/add-and-allow-new-telegram-bot-to-send.html</link><pubDate>Mon, 05 Feb 2018 12:14:00 +0800</pubDate><guid>https://www.ytpor.com/2018/02/add-and-allow-new-telegram-bot-to-send.html</guid><description>&lt;ol>
-&lt;li>Talk to @BotFather, and request to create a new bot. (hint: /help)&lt;/li>
-&lt;li>Give the new bot a name, and a unique username.&lt;/li>
-&lt;li>Take note of the bot token given by the @BotFather&lt;/li>
-&lt;li>Add the new bot to a group.&lt;/li>
-&lt;li>Run this - &lt;a href="https://api.telegram.org/bot">https://api.telegram.org/bot&lt;/a>&amp;lt;bot_token&amp;gt;/getUpdates , to get the group&amp;rsquo;s chat id that contains the new bot.&lt;/li>
-&lt;li>In the group, type /start @username to activate the new bot.&lt;/li>
-&lt;/ol></description></item><item><title>Nginx Configuration for Multiple Yii2 Site Under Same Domain</title><link>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</link><pubDate>Wed, 27 Dec 2017 16:03:00 +0800</pubDate><guid>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</guid><description>&lt;p>This nginx configuration will allow you to run multiple instances of Yii2 in sub folders under the same domain. Eg. &lt;a href="http://advanced.local/">http://advanced.local/&lt;/a> and &lt;a href="http://advanced.local/subfolder/">http://advanced.local/subfolder/&lt;/a>&lt;/p>
-&lt;pre tabindex="0">&lt;code>server {
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>WAMP and curl</title><link>https://www.ytpor.com/2018/02/wamp-and-curl.html</link><pubDate>Fri, 09 Feb 2018 17:33:00 +0800</pubDate><guid>https://www.ytpor.com/2018/02/wamp-and-curl.html</guid><description>&lt;p&gt;Often times, after a fresh install of WAMP server, curl stops working. You might get a hint of the issue in logs/php_error.log If not, it could be that the SSL/TLS Certificate Authority (CA) certificates has not bee setup properly.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download &lt;a href="https://curl.haxx.se/ca/cacert.pem"&gt;cacert.pem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Move the cacert.pem file to a folder, e.g. C:\code\ssl\cacert.pem&lt;/li&gt;
+&lt;li&gt;Edit the php.ini file and change the curl.cainfo parameter, e.g. curl.cainfo = &amp;ldquo;C:\code\ssl\cacert.pem&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Add and Allow New Telegram Bot to Send Message in Group</title><link>https://www.ytpor.com/2018/02/add-and-allow-new-telegram-bot-to-send.html</link><pubDate>Mon, 05 Feb 2018 12:14:00 +0800</pubDate><guid>https://www.ytpor.com/2018/02/add-and-allow-new-telegram-bot-to-send.html</guid><description>&lt;ol&gt;
+&lt;li&gt;Talk to @BotFather, and request to create a new bot. (hint: /help)&lt;/li&gt;
+&lt;li&gt;Give the new bot a name, and a unique username.&lt;/li&gt;
+&lt;li&gt;Take note of the bot token given by the @BotFather&lt;/li&gt;
+&lt;li&gt;Add the new bot to a group.&lt;/li&gt;
+&lt;li&gt;Run this - &lt;a href="https://api.telegram.org/bot"&gt;https://api.telegram.org/bot&lt;/a&gt;&amp;lt;bot_token&amp;gt;/getUpdates , to get the group&amp;rsquo;s chat id that contains the new bot.&lt;/li&gt;
+&lt;li&gt;In the group, type /start @username to activate the new bot.&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Nginx Configuration for Multiple Yii2 Site Under Same Domain</title><link>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</link><pubDate>Wed, 27 Dec 2017 16:03:00 +0800</pubDate><guid>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</guid><description>&lt;p&gt;This nginx configuration will allow you to run multiple instances of Yii2 in sub folders under the same domain. Eg. &lt;a href="http://advanced.local/"&gt;http://advanced.local/&lt;/a&gt; and &lt;a href="http://advanced.local/subfolder/"&gt;http://advanced.local/subfolder/&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;server {
 listen 80; # listen for IPv4
 server_name advanced.local;
 set $root_path /var/www/main/web;
@@ -234,8 +236,8 @@ location ~* \.(htaccess|htpasswd|svn|git) {
 deny all;
 }
 }
-&lt;/code>&lt;/pre></description></item><item><title>Magento 2 Upgrade Ritual</title><link>https://www.ytpor.com/2017/02/magento-2-upgrade-ritual.html</link><pubDate>Tue, 28 Feb 2017 12:20:00 +0800</pubDate><guid>https://www.ytpor.com/2017/02/magento-2-upgrade-ritual.html</guid><description>&lt;p>Assuming that you are on Magento version 2.0.6 and would like to upgrade to 2.0.7&lt;/p>
-&lt;pre tabindex="0">&lt;code>composer require magento/product-community-edition 2.0.7 --no-update
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Magento 2 Upgrade Ritual</title><link>https://www.ytpor.com/2017/02/magento-2-upgrade-ritual.html</link><pubDate>Tue, 28 Feb 2017 12:20:00 +0800</pubDate><guid>https://www.ytpor.com/2017/02/magento-2-upgrade-ritual.html</guid><description>&lt;p&gt;Assuming that you are on Magento version 2.0.6 and would like to upgrade to 2.0.7&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;composer require magento/product-community-edition 2.0.7 --no-update
 composer update
 rm -rf var/di var/generation/* var/view_preprocessed/* var/cache/* var/page_cache
 php bin/magento cache:clean
@@ -243,20 +245,20 @@ php bin/magento cache:flush
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 php bin/magento indexer:reindex
-&lt;/code>&lt;/pre></description></item><item><title>Amazon Cloudwatch alarm to Jaconda - a Telegram Smartbot</title><link>https://www.ytpor.com/2017/02/we-have-setup-amazon-cloudwatch-alarms.html</link><pubDate>Wed, 15 Feb 2017 01:00:00 +0800</pubDate><guid>https://www.ytpor.com/2017/02/we-have-setup-amazon-cloudwatch-alarms.html</guid><description>&lt;p>We have setup Amazon Cloudwatch alarms to keep track of various metrics. In a situation where a particular alarm is triggered, a notification is sent to a Amazon Notification Topic. Within that Amazon Notification Topic, one of the subcription uses the lambda protocol. It is through this subscription which we would get Amazon Lambda to send a message to &lt;a href="https://jaconda.im/">Jaconda&lt;/a> - a Telegram Smartbot.&lt;/p>
-&lt;p>Here&amp;rsquo;s a sample Node.js script that we have used.&lt;/p></description></item><item><title>RabbitMQ can not login with guest/guest</title><link>https://www.ytpor.com/2016/12/rabbitmq-can-not-login-with-guestguest.html</link><pubDate>Tue, 20 Dec 2016 13:54:00 +0800</pubDate><guid>https://www.ytpor.com/2016/12/rabbitmq-can-not-login-with-guestguest.html</guid><description>&lt;p>After a fresh install of RabbitMQ, I have encountered a Login Failed error when trying to access the RabbitMQ Management console at http://localhost:15672&lt;/p>
-&lt;p>Here&amp;rsquo;s one possible solution to overcome this issue.&lt;/p>
-&lt;p>Create a file &lt;strong>/etc/rabbitmq/rabbitmq.config&lt;/strong>, and add the below content into that file.&lt;/p>
-&lt;pre tabindex="0">&lt;code>[{rabbit, [{loopback_users, []}]}].
-&lt;/code>&lt;/pre>&lt;p>Restart the service to apply the changes.&lt;/p></description></item><item><title>S3cmd on CentOS 6</title><link>https://www.ytpor.com/2016/03/s3cmd-on-centos-6.html</link><pubDate>Wed, 30 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/s3cmd-on-centos-6.html</guid><description>&lt;p>S3cmd is a command line tool that we&amp;rsquo;ve used for uploading, retrieving and managing data in Amazon S3.&lt;/p>
-&lt;p>To install S3cmd, you would need to download the .repo for the tool, and then, run install.&lt;/p>
-&lt;pre tabindex="0">&lt;code>cd /etc/yum.repos.d
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Amazon Cloudwatch alarm to Jaconda - a Telegram Smartbot</title><link>https://www.ytpor.com/2017/02/we-have-setup-amazon-cloudwatch-alarms.html</link><pubDate>Wed, 15 Feb 2017 01:00:00 +0800</pubDate><guid>https://www.ytpor.com/2017/02/we-have-setup-amazon-cloudwatch-alarms.html</guid><description>&lt;p&gt;We have setup Amazon Cloudwatch alarms to keep track of various metrics. In a situation where a particular alarm is triggered, a notification is sent to a Amazon Notification Topic. Within that Amazon Notification Topic, one of the subcription uses the lambda protocol. It is through this subscription which we would get Amazon Lambda to send a message to &lt;a href="https://jaconda.im/"&gt;Jaconda&lt;/a&gt; - a Telegram Smartbot.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a sample Node.js script that we have used.&lt;/p&gt;</description></item><item><title>RabbitMQ can not login with guest/guest</title><link>https://www.ytpor.com/2016/12/rabbitmq-can-not-login-with-guestguest.html</link><pubDate>Tue, 20 Dec 2016 13:54:00 +0800</pubDate><guid>https://www.ytpor.com/2016/12/rabbitmq-can-not-login-with-guestguest.html</guid><description>&lt;p&gt;After a fresh install of RabbitMQ, I have encountered a Login Failed error when trying to access the RabbitMQ Management console at http://localhost:15672&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s one possible solution to overcome this issue.&lt;/p&gt;
+&lt;p&gt;Create a file &lt;strong&gt;/etc/rabbitmq/rabbitmq.config&lt;/strong&gt;, and add the below content into that file.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[{rabbit, [{loopback_users, []}]}].
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Restart the service to apply the changes.&lt;/p&gt;</description></item><item><title>S3cmd on CentOS 6</title><link>https://www.ytpor.com/2016/03/s3cmd-on-centos-6.html</link><pubDate>Wed, 30 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/s3cmd-on-centos-6.html</guid><description>&lt;p&gt;S3cmd is a command line tool that we&amp;rsquo;ve used for uploading, retrieving and managing data in Amazon S3.&lt;/p&gt;
+&lt;p&gt;To install S3cmd, you would need to download the .repo for the tool, and then, run install.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cd /etc/yum.repos.d
 wget http://s3tools.org/repo/RHEL_6/s3tools.repo
 yum install s3cmd
-&lt;/code>&lt;/pre>&lt;p>Answer yes when asked to accept a new GPG key.&lt;/p>
-&lt;p>Note: The latest version of s3cmd requires python 2.6. If you come across this error Problem: ImportError: No module named S3.Exceptions, chances are, you do not have the correct version. One work around is as follows:-&lt;/p></description></item><item><title>Various Backup Scripts</title><link>https://www.ytpor.com/2016/03/various-backup-scripts.html</link><pubDate>Mon, 21 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/various-backup-scripts.html</guid><description>&lt;p>Here are some sample backup scripts that I&amp;rsquo;ve used to back up various things in our network. These scripts uses Amazon S3 as the storage, and also s3cmd.&lt;/p>
-&lt;h3 id="application">Application&lt;/h3>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Answer yes when asked to accept a new GPG key.&lt;/p&gt;
+&lt;p&gt;Note: The latest version of s3cmd requires python 2.6. If you come across this error Problem: ImportError: No module named S3.Exceptions, chances are, you do not have the correct version. One work around is as follows:-&lt;/p&gt;</description></item><item><title>Various Backup Scripts</title><link>https://www.ytpor.com/2016/03/various-backup-scripts.html</link><pubDate>Mon, 21 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/various-backup-scripts.html</guid><description>&lt;p&gt;Here are some sample backup scripts that I&amp;rsquo;ve used to back up various things in our network. These scripts uses Amazon S3 as the storage, and also s3cmd.&lt;/p&gt;
+&lt;h3 id="application"&gt;Application&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # Site Backup script
 #
 # application_backup.sh
@@ -304,8 +306,8 @@ else
 echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
 fi
 done
-&lt;/code>&lt;/pre>&lt;h3 id="mysql">MySQL&lt;/h3>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="mysql"&gt;MySQL&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # MySQL Backup script
 #
 # db_backup.sh
@@ -361,8 +363,8 @@ echo -e &amp;#34;***MySQL BACKUP JOB, THERE WERE ERRORS***&amp;#34; &amp;gt;&amp
 else
 echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
 fi
-&lt;/code>&lt;/pre>&lt;h3 id="svn-repository">SVN Repository&lt;/h3>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="svn-repository"&gt;SVN Repository&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # SVN Off Site Backup script
 #
 # svn_backup.sh
@@ -400,8 +402,8 @@ else
 echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
 fi
 done
-&lt;/code>&lt;/pre>&lt;h3 id="svn-repository-to-backup">SVN Repository to Backup&lt;/h3>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="svn-repository-to-backup"&gt;SVN Repository to Backup&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # SVN Repository to Backup
 #
 # call_backup.sh
@@ -411,10 +413,10 @@ my-project-number-two
 my-project-number-three
 )
 /var/script/svn_backup.sh &amp;#34;${svn_repository[*]}&amp;#34;
-&lt;/code>&lt;/pre></description></item><item><title>csync2 Installation and Setup</title><link>https://www.ytpor.com/2016/03/csync2-installation-and-setup.html</link><pubDate>Mon, 14 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/csync2-installation-and-setup.html</guid><description>&lt;p>Csync2 is a cluster synchronization tool. It can be used to keep files on multiple hosts in a cluster in sync. Csync2 can handle complex setups with much more than just 2 hosts, handle file deletions and can detect conflicts.&lt;/p>
-&lt;h3 id="installation">Installation&lt;/h3>
-&lt;p>Build and Install csycn2 by running the below script - build-csync2.sh&lt;/p>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>csync2 Installation and Setup</title><link>https://www.ytpor.com/2016/03/csync2-installation-and-setup.html</link><pubDate>Mon, 14 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/csync2-installation-and-setup.html</guid><description>&lt;p&gt;Csync2 is a cluster synchronization tool. It can be used to keep files on multiple hosts in a cluster in sync. Csync2 can handle complex setups with much more than just 2 hosts, handle file deletions and can detect conflicts.&lt;/p&gt;
+&lt;h3 id="installation"&gt;Installation&lt;/h3&gt;
+&lt;p&gt;Build and Install csycn2 by running the below script - build-csync2.sh&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # build-csync2.sh
 # Make directory to store csync2 related
 mkdir -p /data/build/
@@ -450,32 +452,32 @@ CSYNCLOC=`which csync2`
 echo -e &amp;#34;# default: on\n# description: csync2 xinetd server\n\nservice csync2\n{\n disable = no\n flags = REUSE\n socket_type = stream\n wait = no\n user = root\n group = root\n server = $CSYNCLOC\n server_args = -i -D /data/sync-db/\n port = 30865\n type = UNLISTED\n log_type = FILE /data/logs/csync2/csync2-xinetd.log\n log_on_failure += USERID\n}\n&amp;#34; &amp;gt; /etc/xinetd.d/csync2
 # Restart the service to include the newly created definition
 service xinetd restart
-&lt;/code>&lt;/pre>&lt;h3 id="setup">Setup&lt;/h3>
-&lt;p>First, generate ONE self-signed SSL certificate that would be used by your cluster.&lt;/p></description></item><item><title>Running FTP on CentOS</title><link>https://www.ytpor.com/2016/03/running-ftp-on-centos.html</link><pubDate>Fri, 11 Mar 2016 20:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/running-ftp-on-centos.html</guid><description>&lt;p>Here&amp;rsquo;s how you can easily setup FTP on CentOS&lt;/p>
-&lt;pre tabindex="0">&lt;code>yum install vsftpd
-&lt;/code>&lt;/pre>&lt;p>Added these to the security group if you are running AWS EC2&lt;/p>
-&lt;p>Add port range 20-21
-Add port range 1024-1048&lt;/p>
-&lt;pre tabindex="0">&lt;code>vi /etc/vsftpd/vsftpd.conf
-&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>Set anonymous_enable=NO
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="setup"&gt;Setup&lt;/h3&gt;
+&lt;p&gt;First, generate ONE self-signed SSL certificate that would be used by your cluster.&lt;/p&gt;</description></item><item><title>Running FTP on CentOS</title><link>https://www.ytpor.com/2016/03/running-ftp-on-centos.html</link><pubDate>Fri, 11 Mar 2016 20:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/running-ftp-on-centos.html</guid><description>&lt;p&gt;Here&amp;rsquo;s how you can easily setup FTP on CentOS&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;yum install vsftpd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Added these to the security group if you are running AWS EC2&lt;/p&gt;
+&lt;p&gt;Add port range 20-21
+Add port range 1024-1048&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;vi /etc/vsftpd/vsftpd.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;Set anonymous_enable=NO
 Set chroot_local_user=YES
-&lt;/code>&lt;/pre>&lt;p>Add these&lt;/p>
-&lt;pre tabindex="0">&lt;code>pasv_enable=YES
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add these&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;pasv_enable=YES
 pasv_min_port=1024
 pasv_max_port=1048
 pasv_address=&amp;lt;Public IP of your instance&amp;gt;
-&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>sudo service vsftpd restart
-&lt;/code>&lt;/pre>&lt;p>To make sure that the service is started on reboot&lt;/p>
-&lt;pre tabindex="0">&lt;code>chkconfig --level 345 vsftpd on
-&lt;/code>&lt;/pre>&lt;p>Create new FTP User&lt;/p>
-&lt;pre tabindex="0">&lt;code>useradd -d /path/to/new/home/dir -G apache userNameHere
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;sudo service vsftpd restart
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To make sure that the service is started on reboot&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;chkconfig --level 345 vsftpd on
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create new FTP User&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;useradd -d /path/to/new/home/dir -G apache userNameHere
 chown userNameHere:apache /path/to/new/home/dir
 passwd userNameHere
-&lt;/code>&lt;/pre>&lt;p>The log file can be found in /var/log/xferlog&lt;/p></description></item><item><title>SVN Users and Repositories</title><link>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</link><pubDate>Mon, 07 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</guid><description>&lt;p>We have setup our SVN to be accessed through http with the help of Apache.
-Here&amp;rsquo;s a sample configuration that we have used.&lt;/p>
-&lt;pre tabindex="0">&lt;code>vi /etc/httpd/conf.d/vhosts.conf
-&lt;/code>&lt;/pre>&lt;p>Add the below into subversion.conf&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;lt;VirtualHost *:443&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The log file can be found in /var/log/xferlog&lt;/p&gt;</description></item><item><title>SVN Users and Repositories</title><link>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</link><pubDate>Mon, 07 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</guid><description>&lt;p&gt;We have setup our SVN to be accessed through http with the help of Apache.
+Here&amp;rsquo;s a sample configuration that we have used.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;vi /etc/httpd/conf.d/vhosts.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add the below into subversion.conf&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;VirtualHost *:443&amp;gt;
 ServerName svn.mydomain.com
 DocumentRoot /var/www/svn.mydomain.com
 &amp;lt;Directory /var/www/svn.mydomain.com&amp;gt;
@@ -501,8 +503,8 @@ SSLCertificateKeyFile /etc/pki/tls/private/ca.svn.mydomain.com.key
 ErrorLog /var/log/httpd/svn.mydomain.com-error_log
 CustomLog /var/log/httpd/svn.mydomain.com-access_log combined
 &amp;lt;/VirtualHost&amp;gt;
-&lt;/code>&lt;/pre>&lt;p>You can create a new SVN user by using the command below. This would store the encrypted password into svn-auth.htdigest&lt;/p></description></item><item><title>Testing Yii with Codeception</title><link>https://www.ytpor.com/2016/02/testing-yii-with-codeception.html</link><pubDate>Tue, 02 Feb 2016 18:19:00 +0800</pubDate><guid>https://www.ytpor.com/2016/02/testing-yii-with-codeception.html</guid><description>&lt;p>We have an application written in Yii. Up til this point, it has been manually tested. Since it&amp;rsquo;s more efficient to automate the testing of this application, we have decided to set up Codeception to assist us with this task.&lt;/p>
-&lt;p>Set up was easy and straight forward - this said after spending countless hours understanding the correct way to set it up.&lt;/p>
-&lt;p>To illustrate the set up process, we&amp;rsquo;ll create a skeleton Yii app.&lt;/p></description></item><item><title>What I've Learnt Migrating a Blog from Wordpress to Blogger</title><link>https://www.ytpor.com/2016/01/what-ive-learnt-migrating-blog-from.html</link><pubDate>Thu, 21 Jan 2016 18:52:00 +0800</pubDate><guid>https://www.ytpor.com/2016/01/what-ive-learnt-migrating-blog-from.html</guid><description>&lt;p>As per the subject, migrating a blog from Wordpress to Blogger isn&amp;rsquo;t as hard as most would have imagined, On the down side, it&amp;rsquo;s a bit tedious if you have stored your images with your Wordpress blog. For my case, I have always stored my images on Picasa Web, so, I need not go through the process of copying the images out from the Wordpress blog.&lt;/p>
-&lt;p>Here&amp;rsquo;s the straight forward process of exporting your Wordpress blog into Blogger.&lt;/p></description></item><item><title>Share Your Knowledge and Pass It Along</title><link>https://www.ytpor.com/2016/01/share-your-knowledge-and-pass-it-along.html</link><pubDate>Fri, 08 Jan 2016 18:57:00 +0800</pubDate><guid>https://www.ytpor.com/2016/01/share-your-knowledge-and-pass-it-along.html</guid><description>&lt;p>Knowledge gained through hard work or experience are meant to be shared. You might think that holding on to this knowledge would make you indispensable, or by sharing, it would jeopardize your position since someone else can do it.&lt;/p>
-&lt;p>Yet, have you considered the possibility that you have limited yourself to the scope of this work? You&amp;rsquo;ll end up being the person doing it all the time, and losing the chance to gain new knowledge and experience.&lt;/p></description></item><item><title>About</title><link>https://www.ytpor.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.ytpor.com/about/</guid><description>&lt;p>I&amp;rsquo;m a code writer, observer, handyman, researcher, motivator, consultant and photographer.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can create a new SVN user by using the command below. This would store the encrypted password into svn-auth.htdigest&lt;/p&gt;</description></item><item><title>Testing Yii with Codeception</title><link>https://www.ytpor.com/2016/02/testing-yii-with-codeception.html</link><pubDate>Tue, 02 Feb 2016 18:19:00 +0800</pubDate><guid>https://www.ytpor.com/2016/02/testing-yii-with-codeception.html</guid><description>&lt;p&gt;We have an application written in Yii. Up til this point, it has been manually tested. Since it&amp;rsquo;s more efficient to automate the testing of this application, we have decided to set up Codeception to assist us with this task.&lt;/p&gt;
+&lt;p&gt;Set up was easy and straight forward - this said after spending countless hours understanding the correct way to set it up.&lt;/p&gt;
+&lt;p&gt;To illustrate the set up process, we&amp;rsquo;ll create a skeleton Yii app.&lt;/p&gt;</description></item><item><title>What I've Learnt Migrating a Blog from Wordpress to Blogger</title><link>https://www.ytpor.com/2016/01/what-ive-learnt-migrating-blog-from.html</link><pubDate>Thu, 21 Jan 2016 18:52:00 +0800</pubDate><guid>https://www.ytpor.com/2016/01/what-ive-learnt-migrating-blog-from.html</guid><description>&lt;p&gt;As per the subject, migrating a blog from Wordpress to Blogger isn&amp;rsquo;t as hard as most would have imagined, On the down side, it&amp;rsquo;s a bit tedious if you have stored your images with your Wordpress blog. For my case, I have always stored my images on Picasa Web, so, I need not go through the process of copying the images out from the Wordpress blog.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the straight forward process of exporting your Wordpress blog into Blogger.&lt;/p&gt;</description></item><item><title>Share Your Knowledge and Pass It Along</title><link>https://www.ytpor.com/2016/01/share-your-knowledge-and-pass-it-along.html</link><pubDate>Fri, 08 Jan 2016 18:57:00 +0800</pubDate><guid>https://www.ytpor.com/2016/01/share-your-knowledge-and-pass-it-along.html</guid><description>&lt;p&gt;Knowledge gained through hard work or experience are meant to be shared. You might think that holding on to this knowledge would make you indispensable, or by sharing, it would jeopardize your position since someone else can do it.&lt;/p&gt;
+&lt;p&gt;Yet, have you considered the possibility that you have limited yourself to the scope of this work? You&amp;rsquo;ll end up being the person doing it all the time, and losing the chance to gain new knowledge and experience.&lt;/p&gt;</description></item><item><title>About</title><link>https://www.ytpor.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.ytpor.com/about/</guid><description>&lt;p&gt;I&amp;rsquo;m a code writer, observer, handyman, researcher, motivator, consultant and photographer.&lt;/p&gt;</description></item></channel></rss>

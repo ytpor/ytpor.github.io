@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Nginx on YT Por</title><link>https://www.ytpor.com/tags/nginx/</link><description>Recent content in Nginx on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Wed, 27 Dec 2017 16:03:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/nginx/index.xml" rel="self" type="application/rss+xml"/><item><title>Nginx Configuration for Multiple Yii2 Site Under Same Domain</title><link>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</link><pubDate>Wed, 27 Dec 2017 16:03:00 +0800</pubDate><guid>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</guid><description>&lt;p>This nginx configuration will allow you to run multiple instances of Yii2 in sub folders under the same domain. Eg. &lt;a href="http://advanced.local/">http://advanced.local/&lt;/a> and &lt;a href="http://advanced.local/subfolder/">http://advanced.local/subfolder/&lt;/a>&lt;/p>
-&lt;pre tabindex="0">&lt;code>server {
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Nginx on YT Por</title><link>https://www.ytpor.com/tags/nginx/</link><description>Recent content in Nginx on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Wed, 27 Dec 2017 16:03:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/nginx/index.xml" rel="self" type="application/rss+xml"/><item><title>Nginx Configuration for Multiple Yii2 Site Under Same Domain</title><link>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</link><pubDate>Wed, 27 Dec 2017 16:03:00 +0800</pubDate><guid>https://www.ytpor.com/2017/12/nginx-configuration-for-multiple-yii2.html</guid><description>&lt;p&gt;This nginx configuration will allow you to run multiple instances of Yii2 in sub folders under the same domain. Eg. &lt;a href="http://advanced.local/"&gt;http://advanced.local/&lt;/a&gt; and &lt;a href="http://advanced.local/subfolder/"&gt;http://advanced.local/subfolder/&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;server {
 listen 80; # listen for IPv4
 server_name advanced.local;
 set $root_path /var/www/main/web;
@@ -31,4 +31,4 @@ location ~* \.(htaccess|htpasswd|svn|git) {
 deny all;
 }
 }
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

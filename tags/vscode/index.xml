@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vscode on YT Por</title><link>https://www.ytpor.com/tags/vscode/</link><description>Recent content in Vscode on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Fri, 30 May 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>Could not resolve org.springframework.boot:spring-boot-gradle-plugin</title><link>https://www.ytpor.com/2025/05/could-not-resolve-spring-boot-gradle-plugin/</link><pubDate>Fri, 30 May 2025 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2025/05/could-not-resolve-spring-boot-gradle-plugin/</guid><description>&lt;p>A snippet of my &lt;code>build.gradle&lt;/code> looks like this:&lt;/p>
-&lt;pre tabindex="0">&lt;code>plugins {
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vscode on YT Por</title><link>https://www.ytpor.com/tags/vscode/</link><description>Recent content in Vscode on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Fri, 30 May 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>Could not resolve org.springframework.boot:spring-boot-gradle-plugin</title><link>https://www.ytpor.com/2025/05/could-not-resolve-spring-boot-gradle-plugin/</link><pubDate>Fri, 30 May 2025 10:00:00 +0800</pubDate><guid>https://www.ytpor.com/2025/05/could-not-resolve-spring-boot-gradle-plugin/</guid><description>&lt;p&gt;A snippet of my &lt;code&gt;build.gradle&lt;/code&gt; looks like this:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;plugins {
 id &amp;#39;java&amp;#39;
 id &amp;#39;org.springframework.boot&amp;#39; version &amp;#39;3.5.0&amp;#39;
 id &amp;#39;io.spring.dependency-management&amp;#39; version &amp;#39;1.1.7&amp;#39;
@@ -10,12 +10,12 @@ languageVersion = JavaLanguageVersion.of(17)
 }
 }
 ...
-&lt;/code>&lt;/pre>&lt;p>While using &lt;code>VS Code&lt;/code>, for reason unknown to me, the &lt;code>PROBLEMS&lt;/code> tab shows the below:&lt;/p>
-&lt;pre tabindex="0">&lt;code>The supplied phased action failed with an exception.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;While using &lt;code&gt;VS Code&lt;/code&gt;, for reason unknown to me, the &lt;code&gt;PROBLEMS&lt;/code&gt; tab shows the below:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;The supplied phased action failed with an exception.
 A problem occurred configuring root project &amp;#39;springboot-challenge&amp;#39;.
 Could not resolve all artifacts for configuration &amp;#39;classpath&amp;#39;.
 Could not resolve org.springframework.boot:spring-boot-gradle-plugin:3.5.0.
 Required by:
 root project : &amp;gt; org.springframework.boot:org.springframework.boot.gradle.plugin:3.5.0
 Dependency requires at least JVM runtime version 17. This build uses a Java 11 JVM.
-&lt;/code>&lt;/pre>&lt;p>There was no issue running &lt;code>./gradlew build&lt;/code> from the &lt;code>Terminal&lt;/code>.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There was no issue running &lt;code&gt;./gradlew build&lt;/code&gt; from the &lt;code&gt;Terminal&lt;/code&gt;.&lt;/p&gt;</description></item></channel></rss>

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vbs on YT Por</title><link>https://www.ytpor.com/tags/vbs/</link><description>Recent content in Vbs on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Fri, 17 Aug 2018 12:45:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/vbs/index.xml" rel="self" type="application/rss+xml"/><item><title>Send Telegram Message in Group using VB Script</title><link>https://www.ytpor.com/2018/08/send-telegram-message-in-group-using-vb.html</link><pubDate>Fri, 17 Aug 2018 12:45:00 +0800</pubDate><guid>https://www.ytpor.com/2018/08/send-telegram-message-in-group-using-vb.html</guid><description>&lt;p>Here&amp;rsquo;s a vb script snippet that I have used to send Telegram message in a group from an Excel sheet.&lt;/p>
-&lt;pre tabindex="0">&lt;code>Sub sendTelegramMessage()
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vbs on YT Por</title><link>https://www.ytpor.com/tags/vbs/</link><description>Recent content in Vbs on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Fri, 17 Aug 2018 12:45:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/vbs/index.xml" rel="self" type="application/rss+xml"/><item><title>Send Telegram Message in Group using VB Script</title><link>https://www.ytpor.com/2018/08/send-telegram-message-in-group-using-vb.html</link><pubDate>Fri, 17 Aug 2018 12:45:00 +0800</pubDate><guid>https://www.ytpor.com/2018/08/send-telegram-message-in-group-using-vb.html</guid><description>&lt;p&gt;Here&amp;rsquo;s a vb script snippet that I have used to send Telegram message in a group from an Excel sheet.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Sub sendTelegramMessage()
 Set objHttp = CreateObject(&amp;#34;MSXML2.ServerXMLHTTP&amp;#34;)
 &amp;#39; Change these accordingly
 strChat = &amp;#34;&amp;lt;chat_id&amp;gt;&amp;#34;
@@ -12,4 +12,4 @@ objHttp.Open &amp;#34;POST&amp;#34;, strUrl, False
 objHttp.setRequestHeader &amp;#34;Content-type&amp;#34;, &amp;#34;application/json&amp;#34;
 objHttp.send strJson
 End Sub
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

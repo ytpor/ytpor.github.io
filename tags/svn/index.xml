@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Svn on YT Por</title><link>https://www.ytpor.com/tags/svn/</link><description>Recent content in Svn on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Mon, 07 Mar 2016 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/svn/index.xml" rel="self" type="application/rss+xml"/><item><title>SVN Users and Repositories</title><link>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</link><pubDate>Mon, 07 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</guid><description>&lt;p>We have setup our SVN to be accessed through http with the help of Apache.
-Here&amp;rsquo;s a sample configuration that we have used.&lt;/p>
-&lt;pre tabindex="0">&lt;code>vi /etc/httpd/conf.d/vhosts.conf
-&lt;/code>&lt;/pre>&lt;p>Add the below into subversion.conf&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;lt;VirtualHost *:443&amp;gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Svn on YT Por</title><link>https://www.ytpor.com/tags/svn/</link><description>Recent content in Svn on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Mon, 07 Mar 2016 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/svn/index.xml" rel="self" type="application/rss+xml"/><item><title>SVN Users and Repositories</title><link>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</link><pubDate>Mon, 07 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/svn-users-and-repositories.html</guid><description>&lt;p&gt;We have setup our SVN to be accessed through http with the help of Apache.
+Here&amp;rsquo;s a sample configuration that we have used.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;vi /etc/httpd/conf.d/vhosts.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add the below into subversion.conf&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;VirtualHost *:443&amp;gt;
 ServerName svn.mydomain.com
 DocumentRoot /var/www/svn.mydomain.com
 &amp;lt;Directory /var/www/svn.mydomain.com&amp;gt;
@@ -28,4 +28,4 @@ SSLCertificateKeyFile /etc/pki/tls/private/ca.svn.mydomain.com.key
 ErrorLog /var/log/httpd/svn.mydomain.com-error_log
 CustomLog /var/log/httpd/svn.mydomain.com-access_log combined
 &amp;lt;/VirtualHost&amp;gt;
-&lt;/code>&lt;/pre>&lt;p>You can create a new SVN user by using the command below. This would store the encrypted password into svn-auth.htdigest&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can create a new SVN user by using the command below. This would store the encrypted password into svn-auth.htdigest&lt;/p&gt;</description></item></channel></rss>

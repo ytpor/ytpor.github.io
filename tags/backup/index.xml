@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Backup on YT Por</title><link>https://www.ytpor.com/tags/backup/</link><description>Recent content in Backup on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Mon, 21 Mar 2016 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/backup/index.xml" rel="self" type="application/rss+xml"/><item><title>Various Backup Scripts</title><link>https://www.ytpor.com/2016/03/various-backup-scripts.html</link><pubDate>Mon, 21 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/various-backup-scripts.html</guid><description>&lt;p>Here are some sample backup scripts that I&amp;rsquo;ve used to back up various things in our network. These scripts uses Amazon S3 as the storage, and also s3cmd.&lt;/p>
-&lt;h3 id="application">Application&lt;/h3>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Backup on YT Por</title><link>https://www.ytpor.com/tags/backup/</link><description>Recent content in Backup on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Mon, 21 Mar 2016 12:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/backup/index.xml" rel="self" type="application/rss+xml"/><item><title>Various Backup Scripts</title><link>https://www.ytpor.com/2016/03/various-backup-scripts.html</link><pubDate>Mon, 21 Mar 2016 12:00:00 +0800</pubDate><guid>https://www.ytpor.com/2016/03/various-backup-scripts.html</guid><description>&lt;p&gt;Here are some sample backup scripts that I&amp;rsquo;ve used to back up various things in our network. These scripts uses Amazon S3 as the storage, and also s3cmd.&lt;/p&gt;
+&lt;h3 id="application"&gt;Application&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # Site Backup script
 #
 # application_backup.sh
@@ -48,8 +48,8 @@ else
 echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
 fi
 done
-&lt;/code>&lt;/pre>&lt;h3 id="mysql">MySQL&lt;/h3>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="mysql"&gt;MySQL&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # MySQL Backup script
 #
 # db_backup.sh
@@ -105,8 +105,8 @@ echo -e &amp;#34;***MySQL BACKUP JOB, THERE WERE ERRORS***&amp;#34; &amp;gt;&amp
 else
 echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
 fi
-&lt;/code>&lt;/pre>&lt;h3 id="svn-repository">SVN Repository&lt;/h3>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="svn-repository"&gt;SVN Repository&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # SVN Off Site Backup script
 #
 # svn_backup.sh
@@ -144,8 +144,8 @@ else
 echo -e &amp;#34;Script Completed Successfully!&amp;#34; &amp;gt;&amp;gt; ${LOG_FILE} 2&amp;gt;&amp;amp;1
 fi
 done
-&lt;/code>&lt;/pre>&lt;h3 id="svn-repository-to-backup">SVN Repository to Backup&lt;/h3>
-&lt;pre tabindex="0">&lt;code>#!/bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="svn-repository-to-backup"&gt;SVN Repository to Backup&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/sh
 # SVN Repository to Backup
 #
 # call_backup.sh
@@ -155,4 +155,4 @@ my-project-number-two
 my-project-number-three
 )
 /var/script/svn_backup.sh &amp;#34;${svn_repository[*]}&amp;#34;
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

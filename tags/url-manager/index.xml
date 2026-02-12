@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Url Manager on YT Por</title><link>https://www.ytpor.com/tags/url-manager/</link><description>Recent content in Url Manager on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Thu, 09 Apr 2020 13:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/url-manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Yii2 URL manager cache class</title><link>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</link><pubDate>Thu, 09 Apr 2020 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</guid><description>&lt;p>You might come across the below warning if you have not set a cache to your Yii2 application while using URL manager.&lt;/p>
-&lt;pre tabindex="0">&lt;code>Unable to use cache for URL manager: Failed to instantiate component or class &amp;#34;cache&amp;#34;.
-&lt;/code>&lt;/pre>&lt;p>In order to remove that warning, setup a cache in your application&amp;rsquo;s configuration.&lt;/p>
-&lt;p>We are using the DummyCache class here as we have yet to decide on one that we want to use.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;#39;components&amp;#39; =&amp;gt; [
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Url Manager on YT Por</title><link>https://www.ytpor.com/tags/url-manager/</link><description>Recent content in Url Manager on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Thu, 09 Apr 2020 13:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/url-manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Yii2 URL manager cache class</title><link>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</link><pubDate>Thu, 09 Apr 2020 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2020/04/yii2-url-manager-cache-class.html</guid><description>&lt;p&gt;You might come across the below warning if you have not set a cache to your Yii2 application while using URL manager.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Unable to use cache for URL manager: Failed to instantiate component or class &amp;#34;cache&amp;#34;.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In order to remove that warning, setup a cache in your application&amp;rsquo;s configuration.&lt;/p&gt;
+&lt;p&gt;We are using the DummyCache class here as we have yet to decide on one that we want to use.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;#39;components&amp;#39; =&amp;gt; [
 &amp;#39;cache&amp;#39; =&amp;gt; [
 &amp;#39;class&amp;#39; =&amp;gt; &amp;#39;yii\caching\DummyCache&amp;#39;, // FIXME
 ],
 ],
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

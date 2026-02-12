@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Internationalization on YT Por</title><link>https://www.ytpor.com/tags/internationalization/</link><description>Recent content in Internationalization on YT Por</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate>Fri, 12 May 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/internationalization/index.xml" rel="self" type="application/rss+xml"/><item><title>Yii2 Internationalization (i18n) for advanced template</title><link>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</link><pubDate>Fri, 12 May 2023 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</guid><description>&lt;p>We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).&lt;/p>
-&lt;p>In each of our application, we have a translation configuration. This is needed to generate the translation. The files would be generated in &lt;code>backend/messages&lt;/code>, &lt;code>common/messages&lt;/code> or &lt;code>frontend/messages&lt;/code>.&lt;/p>
-&lt;p>Here&amp;rsquo;s a sample.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;lt;?php
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Internationalization on YT Por</title><link>https://www.ytpor.com/tags/internationalization/</link><description>Recent content in Internationalization on YT Por</description><generator>Hugo -- 0.155.3</generator><language>en-us</language><lastBuildDate>Fri, 12 May 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://www.ytpor.com/tags/internationalization/index.xml" rel="self" type="application/rss+xml"/><item><title>Yii2 Internationalization (i18n) for advanced template</title><link>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</link><pubDate>Fri, 12 May 2023 13:00:00 +0800</pubDate><guid>https://www.ytpor.com/2023/05/yii2-internationalization-i18n-for-advanced-template.html</guid><description>&lt;p&gt;We are working on a project that makes use of Yii2 advanced template. This project needs to support Internationalization (i18n).&lt;/p&gt;
+&lt;p&gt;In each of our application, we have a translation configuration. This is needed to generate the translation. The files would be generated in &lt;code&gt;backend/messages&lt;/code&gt;, &lt;code&gt;common/messages&lt;/code&gt; or &lt;code&gt;frontend/messages&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a sample.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;?php
 // backend/config/i18n.php
 // common/config/i18n.php
 // frontend/config/i18n.php
@@ -40,4 +40,4 @@ return [
 &amp;#39;messagePath&amp;#39; =&amp;gt; __DIR__ . DIRECTORY_SEPARATOR . &amp;#39;..&amp;#39; . DIRECTORY_SEPARATOR . &amp;#39;messages&amp;#39;,
 &amp;#39;overwrite&amp;#39; =&amp;gt; true,
 ];
-&lt;/code>&lt;/pre>&lt;p>Here are some samples of how the text should be wrapped.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here are some samples of how the text should be wrapped.&lt;/p&gt;</description></item></channel></rss>
