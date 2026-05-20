@@ -511,4 +511,30 @@ CustomLog /var/log/httpd/svn.mydomain.com-access_log combined
 &lt;p&gt;Set up was easy and straight forward - this said after spending countless hours understanding the correct way to set it up.&lt;/p&gt;
 &lt;p&gt;To illustrate the set up process, we&amp;rsquo;ll create a skeleton Yii app.&lt;/p&gt;</description></item><item><title>What I've Learnt Migrating a Blog from Wordpress to Blogger</title><link>https://www.ytpor.com/2016/01/what-ive-learnt-migrating-blog-from.html</link><pubDate>Thu, 21 Jan 2016 18:52:00 +0800</pubDate><guid>https://www.ytpor.com/2016/01/what-ive-learnt-migrating-blog-from.html</guid><description>&lt;p&gt;As per the subject, migrating a blog from Wordpress to Blogger isn&amp;rsquo;t as hard as most would have imagined, On the down side, it&amp;rsquo;s a bit tedious if you have stored your images with your Wordpress blog. For my case, I have always stored my images on Picasa Web, so, I need not go through the process of copying the images out from the Wordpress blog.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s the straight forward process of exporting your Wordpress blog into Blogger.&lt;/p&gt;</description></item><item><title>Share Your Knowledge and Pass It Along</title><link>https://www.ytpor.com/2016/01/share-your-knowledge-and-pass-it-along.html</link><pubDate>Fri, 08 Jan 2016 18:57:00 +0800</pubDate><guid>https://www.ytpor.com/2016/01/share-your-knowledge-and-pass-it-along.html</guid><description>&lt;p&gt;Knowledge gained through hard work or experience are meant to be shared. You might think that holding on to this knowledge would make you indispensable, or by sharing, it would jeopardize your position since someone else can do it.&lt;/p&gt;
-&lt;p&gt;Yet, have you considered the possibility that you have limited yourself to the scope of this work? You&amp;rsquo;ll end up being the person doing it all the time, and losing the chance to gain new knowledge and experience.&lt;/p&gt;</description></item><item><title>About</title><link>https://www.ytpor.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.ytpor.com/about/</guid><description>&lt;p&gt;I&amp;rsquo;m a code writer, observer, handyman, researcher, motivator, consultant and photographer.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Yet, have you considered the possibility that you have limited yourself to the scope of this work? You&amp;rsquo;ll end up being the person doing it all the time, and losing the chance to gain new knowledge and experience.&lt;/p&gt;</description></item><item><title>About</title><link>https://www.ytpor.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.ytpor.com/about/</guid><description>&lt;p&gt;I&amp;rsquo;m a code writer, observer, handyman, researcher, motivator, consultant and photographer.&lt;/p&gt;</description></item><item><title>Curriculum Vitae (CV)</title><link>https://www.ytpor.com/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.ytpor.com/cv/</guid><description>&lt;h2 id="professional-summary"&gt;Professional Summary&lt;/h2&gt;
+&lt;p&gt;Software developer and engineering leader with extensive experience building scalable applications and managing development teams. Specialised in full-stack web development, API integration, and cloud infrastructure, with a track record of leading teams through the full software lifecycle from concept to deployment.&lt;/p&gt;
+&lt;h3 id="professional-experience"&gt;Professional Experience&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Company names omitted for confidentiality; available upon request.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="research-and-development-manager"&gt;Research and Development Manager&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Leading Technology Solution Provider in Malaysia&lt;/strong&gt;
+&lt;em&gt;September 2024 – Present&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="scope"&gt;Scope&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Oversee a team of Software Developers managing day-to-day requests and supporting new application development.&lt;/li&gt;
+&lt;li&gt;Maintain and upgrade legacy systems.&lt;/li&gt;
+&lt;li&gt;Recruit new team members.&lt;/li&gt;
+&lt;li&gt;Explore emerging technologies.&lt;/li&gt;
+&lt;li&gt;Recommend new technologies to stakeholders.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="technology-used"&gt;Technology Used&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Languages &amp;amp; Frameworks&lt;/strong&gt;: PHP, Shell Scripting, JavaScript, Spring Boot, Laravel, Codeception, Angular, Vue.js, Node.js, Express, Python&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Databases &amp;amp; Caching&lt;/strong&gt;: MySQL, Redis, Oracle Database, PostgreSQL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DevOps &amp;amp; Infrastructure&lt;/strong&gt;: Docker, Apache, nginx, HashiCorp Vault, OpenBao, AWS (EC2, IAM, RDS, SNS, SQS, S3)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tools &amp;amp; Platforms&lt;/strong&gt;: Git, GitLab, CI/CD&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Operating Systems&lt;/strong&gt;: Windows, Linux (CentOS, Debian), macOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="head-of-development-department"&gt;Head of Development Department&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Business Process Outsourcing (BPO) Provider in Malaysia&lt;/strong&gt;
+&lt;em&gt;January 2018 – August 2024&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
