@@ -1,5 +1,5 @@
 baseURL = "https://www.ytpor.com"
-languageCode = "en-us"
+locale = "en-us"
 title = "YT Por"
 theme = "PaperMod"
 googleAnalytics = 'G-3V2PB7JNZW'
@@ -32,6 +32,11 @@ home = ["HTML", "RSS", "JSON"]
 name = 'About'
 url = '/about/'
 weight = 30
+
+[[menu.main]]
+name = 'CV'
+url = '/cv/'
+weight = 35
 
 [[menu.main]]
 name = 'Archives'
