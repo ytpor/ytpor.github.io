@@ -27,14 +27,14 @@ The fix is to pass explicit DNS servers through the GitLab Runner config so ever
 
 ```toml
 [runners.docker]
-  dns = ["1.1.1.1", "8.8.8.8"]
+  dns = ["8.8.8.8", "1.1.1.1"]
 ```
 
 To apply this without a shell inside the runner container:
 
 ```bash
 docker cp <runner-container-id>:/etc/gitlab-runner/config.toml /tmp/config.toml
-nano /tmp/config.toml
+vi /tmp/config.toml
 docker cp /tmp/config.toml <runner-container-id>:/etc/gitlab-runner/config.toml
 docker exec <runner-container-id> gitlab-runner restart
 ```
