@@ -1,6 +1,6 @@
 ---
 title: 'Converting DOCX and PDF to Markdown with MarkItDown'
-date: 2026-07-10T10:00:00+08:00
+date: 2026-07-10T10:01:00+08:00
 draft: false
 url: /2026/07/convert-docx-pdf-to-markdown
 tags:
