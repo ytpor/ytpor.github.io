@@ -44,3 +44,30 @@ github.com
   Token: ghp_****
   Token scopes: gist, read:org, repo, workflow
 ```
+
+## Updating an expired token
+
+When the PAT expires, `gh` commands start failing auth checks again. Generate a fresh token the same way as before, then refresh the stored credential:
+
+```bash
+gh auth refresh
+```
+
+This prompts for the new token without logging you out first. If the new token has different scopes than before, pass them explicitly:
+
+```bash
+gh auth refresh -h github.com -s repo,workflow,read:org
+```
+
+If `gh auth refresh` doesn't pick up the new token, fall back to a clean logout and re-login with `--with-token`, same as the initial setup:
+
+```bash
+gh auth logout
+echo "YOUR_NEW_TOKEN" | gh auth login --with-token
+```
+
+Confirm it worked:
+
+```bash
+gh auth status
+```
